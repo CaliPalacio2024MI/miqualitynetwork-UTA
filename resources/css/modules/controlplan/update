@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+table{
+width: 90%;
+position: relative;
+top:  50px;
+border-spacing: 0;
+border-collapse: separate;
+border-radius: 10px;
+/*border: 1px solid;*/
+}
+
+th, td{
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th{
+    background-color: #092034;
+    color: white;
+}
+
+tr:hover{
+    background-color: #BABABA;
+}
+
+.modal-pos{
+    top: 25%;
+}
+
+.pag-pos{
+    padding-right: 10%;
+    padding-top: 4%;
+}
+
+.border{
+    border-radius: 5px;
+}
+
+.search-pos{
+    padding-top: 3%;
+}
+
+.close-search{
+    padding-left: 4%;
+}
+
+.table-search-pos{
+    padding-left: 5%;
+}
+
+.reason-box{
+    width: 280px;
+    resize: none;
+}
+
+.search-bar{
+    width: 60%;
+}

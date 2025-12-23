@@ -1,0 +1,715 @@
+body {
+    font-family: arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+#form-container {
+    width: 99%;
+    margin: auto;
+    padding: 10px;
+    overflow-y: auto;
+    height: 85vh;
+    box-sizing: border-box;
+}
+
+.Titulo{
+
+border-bottom: 4px solid #092034;
+}
+.TituloFormulario{
+font-family: "Poppins", sans-serif;
+margin: 10px 0;
+}
+
+h1 {
+font-family: "Poppins", sans-serif;
+margin: 10px 0;
+}
+
+table {
+width: 100%;
+border-collapse: collapse; /* Elimina líneas blancas entre filas */
+text-align: center;
+margin-top: 20px;
+}
+
+.border-inferior {
+border-left: 1px solid black; 
+border-right: 1px solid black; 
+border-bottom: 1px solid black;
+padding: 8px;
+}
+
+.no-border-inferior {
+border-left: 1px solid black; 
+border-right: 1px solid black; 
+border-bottom: none;
+}
+
+.table-container {
+border: 1px solid #ddd;
+border-radius: 15px;
+background: white;
+padding: 10px;
+box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th {
+border: none;
+padding: 8px;
+text-align: center;
+font-size: 14px;
+background-color: rgb(11, 42, 70);
+color: white;
+font-weight: bold;
+margin-top: 20px;
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+
+td {
+border: none;
+padding: 12px;
+text-align: center;
+font-size: 14px;
+font-family: "Poppins", sans-serif;
+font-weight: 300;
+font-style: normal;
+}
+
+.section-title {
+background-color: #092034;
+color: white;
+font-weight: bold;
+text-align: left;
+padding: 5px;
+font-size: 16px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+font-family: "Poppins", sans-serif;
+font-weight: 600;
+font-style: italic;
+}
+
+/* Ajuste de ancho para las columnas */
+.col-small {
+width: 20%;
+}
+.col-medium {
+width: 30%;
+}
+.col-large {
+width: 50%;
+}
+
+/* Inputs con solo línea inferior */
+.line-input {
+width: 100%;
+max-width: 100%; /* Evita que sobresalga */
+border: none;
+border-bottom: 2px solid black;
+background: transparent;
+outline: none;
+font-size: 14px;
+padding: 8px;
+text-align: center;
+transition: all 0.3s ease;
+border-radius: 10px;
+background: #d7e0ff;
+box-sizing: border-box; /* Ajuste para evitar desbordamiento */
+}
+.line-input-select{
+width: 100%;
+max-width: 100%;
+border: none;
+border-bottom: 2px solid black;
+background: transparent;
+outline: none;
+font-size: 14px;
+padding: 8px;
+text-align: center;
+transition: all 0.3s ease;
+border-radius: 10px;
+background: #acb7db;
+box-sizing: border-box; /* Ajuste para evitar desbordamiento */ 
+}
+
+.line-input:focus {
+border-bottom: 3px solid #092034;
+}
+
+/* Alinear correctamente el texto de los agentes */
+.agents-list td {
+text-align: left;
+padding-left: 10px;
+}
+/* Alinear correctamente el texto de los agentes para la segunda seccion */
+.agents-list-antecedentes td {
+    text-align: left;
+    padding-left: 10px;
+    }
+
+/* Estilo para checkboxes minimalistas */
+.custom-checkbox {
+appearance: none; /* Oculta el checkbox por defecto */
+width: 20px;
+height: 20px;
+border: 2px solid #092034; /* Borde del checkbox */
+border-radius: 5px; /* Bordes redondeados */
+background: white;
+position: relative;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+/* Efecto al marcar el checkbox */
+.custom-checkbox:checked {
+background-color: #092034;
+border-color: #092034;
+}
+
+/* Icono de check (✓) al marcar */
+.custom-checkbox:checked::after {
+content: "✔";
+font-size: 12px;
+color: white;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-weight: bold;
+}
+
+/* Efecto hover */
+.custom-checkbox:hover {
+border-color: #0d3a5f;
+}
+/* Estilos generales del botón */
+.btn {
+padding: 12px 30px;
+border-radius: 5px;
+font-size: 16px;
+font-weight: 600;
+text-transform: uppercase;
+cursor: pointer;
+border: 2px solid transparent;
+transition: all 0.3s ease;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor para los botones */
+.button-container {
+    display: flex; /* Activa Flexbox para el contenedor */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente (si es necesario en el contexto) */
+    gap: 20px; /* Espacio entre los botones (ajusta este valor a tu gusto) */
+    padding: 20px; 
+}
+
+.btn-custom-save {
+    background-color: #A96D35;
+    color: white;
+    width: 150px;
+    /* Otros estilos que tenías para .btn-save */
+}
+
+.btn-custom-save:hover {
+    background-color: #092034; /* Color más oscuro al hacer hover */
+    border-color: rgb(23, 32, 85);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    /* Otros estilos hover para .btn-save */
+}
+
+.btn-custom-save:active {
+    background-color: rgb(28, 23, 87); /* Sombra más intensa en clic */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Otros estilos active para .btn-save */
+}
+
+.btn-custom-cancel {
+    background-color: #A96D35; /* Rojo */
+    color: white;
+    width: 150px;
+    /* Otros estilos que tenías para .btn-cancel */
+}
+
+.btn-custom-cancel:hover {
+    background-color: #811212; /* Rojo más oscuro al hacer hover */
+    border-color: #e53935;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    /* Otros estilos hover para .btn-cancel */
+}
+
+.btn-custom-cancel:active {
+    background-color: #c62828; /* Rojo más intenso al hacer clic */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Otros estilos active para .btn-cancel */
+}
+
+   #canvas {
+    border: 1px solid black;
+}
+
+/* Estilos generales para los botones */
+.btn-agregar-campos, .btn-eliminar-campos {
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espacio entre el ícono y el texto */
+    border-radius: 15px; /* Bordes redondeados */
+    transition: all 0.3s ease;
+    border: none;
+    text-decoration: none;
+}
+
+/* Estilo para el botón Agregar */
+.btn-agregar-campos {
+    background-color: #A96D35; /* Azul oscuro */
+    color: white;
+}
+
+.btn-agregar-campos:hover {
+    background-color: #092034; /* Azul más oscuro al hacer hover */
+}
+
+.btn-agregar-campos:active {
+    background-color: rgb(19, 54, 119); /* Azul aún más oscuro al hacer clic */
+    transform: scale(0.98); /* Efecto de "presionar" */
+}
+
+/* Estilo para el botón Eliminar */
+.btn-eliminar-campos {
+    background-color: #A96D35; /* Naranja */
+    color: white;
+}
+
+.btn-eliminar-campos:hover {
+    background-color: #811212; /* Rojo más oscuro al hacer hover */
+; /* Naranja más oscuro al hacer hover */
+}
+
+.btn-eliminar-campos:active {
+    background-color: rgb(255, 87, 34); /* Naranja más intenso al hacer clic */
+    transform: scale(0.98); /* Efecto de "presionar" */
+}
+
+/* Estilo para los iconos dentro de los botones */
+.btn-agregar-campos .icon, .btn-eliminar-campos .icon {
+    font-size: 20px; /* Tamaño del ícono */
+    font-weight: bold;
+}
+
+/* Estilo para el símbolo + del botón Agregar */
+.btn-agregar-campos .icon {
+    content: "+";
+}
+
+/* Estilo para el símbolo × del botón Eliminar */
+.btn-eliminar-campos .icon {
+    content: "×";
+}
+/* Contenedor de los botones de agregar y eliminar */
+.button-container {
+    display: flex; /* Usamos flexbox para alinearlos horizontalmente */
+    justify-content: center; /* Centra los botones en el contenedor */
+    align-items: center; /* Alinea los botones verticalmente al centro */
+}
+.encabezado{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; /* Alineación a la derecha */
+    align-items: center; /* Alinea verticalmente el botón */
+    padding: 0 20px; /* Espaciado alrededor */
+}
+.button-regresar {
+    background: white;
+    border: 1px solid #092034;
+    color: #092034;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    justify-content: right;
+}
+
+.button-regresar:hover {
+    background: #7397a1;
+    color: white;
+}
+
+#canvas {
+    border: 2px solid #4f6f8f; /* Borde azul suave */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #f4f4f4; /* Fondo gris claro */
+    width: 100%;
+    height: 200px; /* Altura del área de firma */
+    cursor: crosshair; /* Cursor de cruz para firmar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+/* Estilos para el popup */
+.popup {
+display: none;
+position: fixed;
+z-index: 1;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;   
+overflow: auto;
+background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.popup-contenido {
+background-color: white; /* Teal background */
+margin: 15% auto;
+padding: 20px;
+border: 1px solid #031227;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+width: 40%;
+max-width: 500px;
+color: #031227; /* White text */
+position: relative;
+}
+
+
+.popup-aviso {
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 20px;
+background-color: #031227; /* White background for "AVISO" */
+color: white; /* Black text for "AVISO" */
+padding: 10px;
+border-radius: 20px;
+width: 30%;
+margin: 0 auto 20px;
+}
+
+#mensajePopup {
+margin-bottom: 20px;
+line-height: 1.4;
+}
+
+#btn-cerrar-popup {
+background-color: #007bff; /* White background for the button */
+color: white; /* Black text for the button */
+padding: 12px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+}
+#btn-cerrar-popup:hover {
+background: #7397a1;
+color: white;
+}
+.imgIconos {
+height: 25px;            /* Tamaño más estándar para íconos */
+width: auto;               /* Mantiene la proporción original */
+margin-right: 8px;         /* Espacio a la derecha */
+
+display: inline-block;     /* Asegura que se alinee con texto u otros ítems */
+vertical-align: middle;    /* Centrado vertical si va con texto */
+}
+/* AGREGACION DE CSS JUAN CARLOS------------------- */
+    .seccion-titulo {
+        background-color: #265ba4;
+        color: white;
+        font-weight: bold;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .contenedor-cajas {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 16px;
+        background-color: #f5f5f5;
+    }
+
+    .bloque-opcion {
+        justify-content: center;
+        text-align:center;
+        background-color: #e0e0e0;
+        border-radius: 12px;
+        padding: 12px;
+        flex: 1 1 30%;
+        min-width: 240px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .bloque-opcion label {
+        justify-content: center;
+        display: block;
+        margin-top: 6px;
+    }
+
+    .bloque-opcion .radio-group {
+        justify-content: center;
+        margin-top: 6px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .campo-texto, textarea {
+        width: 100%;
+        padding: 6px 10px;
+        border-radius: 10px;
+        border: 1px solid #031227;
+        background-color: #e0e0e0;
+        margin-top: 6px;
+    }
+
+    textarea {
+        resize: vertical;
+        height: 60px;
+    }
+
+    .caja-full {
+        flex: 1 1 100%;
+    }
+.signature-pad {
+    border: 1px solid #000;
+    width: 120px;
+    height: 50px;
+    cursor: crosshair;
+    touch-action: none;
+}
+/* ñ////////////////////////////////////////////// */
+/* --------- Estilo para el canvas de firma --------- */
+.signature-pad {
+  width: 100%;
+  max-width: 300px;           /* controla el ancho máximo */
+  height: 100px;              /* fija la altura */
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: #f9f9f9;
+  cursor: crosshair;
+}
+
+/* Centrar el canvas y botones dentro de su celda */
+.signature-pad,
+.signature-pad + p {
+  display: block;
+  margin: 0.5rem auto;
+  text-align: center;
+}
+
+/* Botones Limpiar/Guardar */
+.clear-button,
+.submit-button {
+  background-color: #265ba4;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  margin: 4px 2px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.clear-button:hover,
+.submit-button:hover {
+  background-color: #1f488a;
+}
+
+/* Ajuste responsive: en móviles el canvas ocupe el 100% */
+@media (max-width: 600px) {
+  .signature-pad {
+    max-width: 100%;
+  }
+}
+
+/* ////////////////estilos del cuerpo humano */
+ /* Contenedor del canvas */
+ /* ////////////////estilos del cuerpo humano */
+        /* Contenedor del canvas */
+        #bodyMapContainer {
+            width: 320px;
+            height: 430px;
+            margin: auto;
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        /* Overlay de lupa */
+        #zoomOverlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            /* menos opaco */
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        /* Contenedor de zoom transparente y con sombra */
+        #zoomBox {
+            background: transparent;
+            padding: 0;
+            border-radius: 8px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0.8, 0.5);
+        }
+
+        /* El canvas que mete Konva que llene todo el zoomBox */
+        #zoomBoxCanvas {
+            width: 150px;
+            height: 150px;
+        }
+
+        #subzoneSelect {
+            display: none;
+            text-align: center;
+            margin-top: 8px;
+            color: #333;
+        }
+
+        #subzoneSelect select,
+        #subzoneSelect button {
+            font-size: 12px;
+            padding: 4px;
+        }
+
+        /* Listados de seleccionados */
+        #selectedLeft,
+        #selectedRight {
+            position: static !important;
+            width: 100%;
+            max-height: 350px;
+            display: block;
+            font-size: 13px;
+            margin-bottom: 12px;
+        }
+
+        #selectedLeft {
+            left: 20px;
+        }
+
+        #selectedRight {
+            right: 20px;
+        }
+
+        #selectedLeft div,
+        #selectedRight div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(148, 132, 132, 0.8);
+            margin: 4px 0;
+            padding: 4px 6px;
+            border-radius: 3px;
+        }
+
+        .remove-btn {
+            background: transparent;
+            border: none;
+            color: #c0392b;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 1;
+        }
+
+
+        /* ─── Card contenedor ─── */
+        #bodyMapWrapper {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 16px;
+            margin: 16px auto;
+            max-width: 900px;
+        }
+
+        /* ─── Botón toggle ─── */
+        #toggleView {
+            background-color: #265ba4;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background .2s ease;
+        }
+
+        #toggleView:hover {
+            background: #3989b5;
+        }
+
+        /* ─── Listados como tarjetas pequeñas ─── */
+        #selectedLeft,
+        #selectedRight {
+            background: #f5f5f5;
+            border-radius: 6px;
+            padding: 12px;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        #selectedLeft strong,
+        #selectedRight strong {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 15px;
+            color: #333;
+        }
+
+        #selectedLeft div,
+        #selectedRight div {
+            background: #fff;
+            margin-bottom: 6px;
+            padding: 6px 8px;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+        }
+
+        /* ─── Visual spacing entre columnas ─── */
+        #bodyMapWrapper>div {
+            flex: 1;
+        }
+
+        #bodyMapWrapper>div:nth-child(2) {
+            flex: 0 0 auto;
+            /* centro con width fija */
+            margin: 0 24px;
+        }
+
+        /* ─── Responsivo ─── */
+        @media (max-width: 800px) {
+            #bodyMapWrapper {
+                display: block;
+            }
+
+            #bodyMapWrapper>div {
+                margin-bottom: 16px;
+            }
+
+            #bodyMapContainer {
+                margin: 0 auto;
+            }
+        }

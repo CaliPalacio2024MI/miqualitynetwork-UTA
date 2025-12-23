@@ -1,0 +1,129 @@
+.asignacion-container {
+    padding: 20px;
+    background-color: #F4F4F4;
+    margin-left: 80px;
+}
+
+.titulo-asignacion {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.filtros-superiores {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;   
+}
+
+.input-camarista {
+    width: 430px; /* o el tamaño que necesites */
+}
+
+
+.dropdown {
+    padding: 5px;
+    border-radius: 6px;
+}
+
+input[type="number"] {
+    padding: 6px 10px;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 60px; /* Ajusta el ancho según necesites */
+    box-sizing: border-box;
+}
+
+
+.paneles-asignacion {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.panel {
+    background-color: white;
+    border-radius: 8px;
+    width: 430px;
+    min-height: 390px;
+    overflow: auto;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.panel-2 {
+    background-color: white;
+    border-radius: 8px;
+    width: 700px;
+    min-height: 390px;
+    overflow: auto;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.panel-encabezado {
+    background-color: #BC8A55;
+    color: white;
+    padding: 6px 10px;
+    font-weight: bold;
+    font-size: 14px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.panel-cuerpo {
+    padding: 10px;
+    font-size: 13px;
+}
+
+.acciones-inferiores {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 6px 15px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 13px;
+    background-color: #092034;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #BC8A55;
+    color: white;
+}
+
+.btn-fecha {
+    padding: 6px 15px;
+    border-radius: 6px;
+    background-color: white;
+    color: #000000;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    
+}
+
+.btn-fecha:hover {
+    background-color: #f4f4f4;
+}
+
+.btn-guardar {
+    background-color: #092034;
+    border-radius: 8px;
+    margin-left: 60%;
+}
+
+.btn-guardar:hover {
+    background-color: #bc8a55;
+}

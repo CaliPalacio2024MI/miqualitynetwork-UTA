@@ -1,0 +1,150 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+ }
+.texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    font-size: 20px;
+    color: black;
+}
+.contenido-titulo {
+    width: 300px;
+    border-radius: 1rem;
+    border-style: solid;
+    border-color: #BABABA;
+    border-width: 2px;
+}
+
+.titulo{
+    display: flex;
+}
+.carpeta{
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.p-6{
+    background-color: white!important;
+
+}
+.linea-dorada {
+width: 90%;
+    height: 4px;
+    background-color: #daa520;
+    margin: 10px auto 0;
+    border-radius: 2px;
+    display: block;
+}
+
+/* Estilos generales para todos los botones */
+.btn-compras,
+.btn-talento,
+.btn-tecnologia,
+.btn-mantenimiento,
+.btn-finanzas,
+.btn-ama,
+.btn-mercadotecnia,
+.btn-imprenta,
+.btn-prevencion,
+.btn-ventas,
+.btn-proyectos {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 0.5rem;
+    background-image: url('../images/carpeta.png');
+    background-size:70%;
+    background-position: center;
+    background-position-y: 0%;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease;
+    margin-top: 40px;
+    margin-left: 20px;
+    height: 150px;
+    width: 150px;
+   text-align: center;
+   line-height: 100%;
+   transition: all 0.3s ease;
+
+}
+
+
+
+
+.btn-compras:hover,
+.btn-talento:hover,
+.btn-tecnologia:hover,
+.btn-tiendas:hover,
+.btn-mantenimiento:hover,
+.btn-finanzas:hover,
+.btn-ama:hover,
+.btn-mercadotecnia:hover,
+.btn-imprenta:hover,
+.btn-prevencion:hover,
+.btn-ventas:hover,
+.btn-proyectos:hover{
+    transform: scale(1.05);
+    box-shadow: 0 20px 5px rgba(0, 0, 0, 0.2);
+    background-color: #BC8A55;
+}
+
+.secciones{
+    justify-content: center;
+
+}
+
+
+
+.seccion1,
+.seccion2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    min-width: 100%;
+    justify-content: center;
+}
+
+@media(max-width:431px){
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .titulo{
+        font-size: medium;
+        }
+    .contenido-titulo {
+        width: 250px;
+    }
+    .carpeta{
+        margin-left: 10px;
+    }
+        .secciones{
+        overflow-y: auto;
+    }
+
+.secciones {
+    height: 100%;
+    overflow-y: auto;
+    display: block;
+    justify-content: center;
+}
+.seccion2{
+    margin-bottom: 100px;
+}
+}

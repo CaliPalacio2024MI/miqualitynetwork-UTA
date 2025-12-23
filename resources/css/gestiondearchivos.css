@@ -1,0 +1,68 @@
+.btn-seccion {
+    background-color: #092034; /* Color azul por defecto */
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-seccion:hover {
+    background-color: #07304A; /* Azul más oscuro para hover */
+}
+
+.btn-seccion.active {
+    background-color: #BC8A55; /* Color dorado para el botón seleccionado */
+    transform: scale(1.05); /* Efecto de agrandamiento */
+}
+
+/* Clases para los botones de procesos en formulario */
+.btn-proceso {
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    font-size: 1rem; /* Tamaño base */
+    padding: 0.5rem 1rem; /* Espaciado base */
+}
+
+.btn-proceso.active {
+    background-color: #103c62; /* Azul oscuro para el botón seleccionado */
+    color: white; /* Texto blanco */
+    transform: scale(1.2); /* Agrandamiento del botón seleccionado */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para resaltar */
+    font-size: 1.2rem; /* Texto más grande */
+    padding: 0.6rem 1.2rem; /* Espaciado más grande */
+}
+
+.btn-proceso:not(.active) {
+    background-color: #b6bece; /* Gris para el botón no seleccionado */
+    color: black; /* Texto negro */
+    transform: scale(0.8); /* Tamaño reducido */
+    box-shadow: none; /* Sin sombra */
+    font-size: 0.8rem; /* Texto más pequeño */
+    padding: 0.4rem 0.8rem; /* Espaciado más pequeño */
+}
+
+.btn-proceso:not(.active):hover {
+    background-color: #d0d6e0; /* Gris más claro para hover */
+    transform: scale(1); /* Tamaño normal al pasar el cursor */
+}
+
+
+.contenido-carpetas{
+    overflow-y: scroll!important;
+}
+
+@media(max-width:1920px){
+    .contenedor-global-carpetas{
+        overflow-y: auto!important;
+
+    }
+    .contenido-carpetas{
+
+        overflow-y: scroll!important;
+    }
+    .contenedor-carpetas-creadas{
+
+    }
+}
+@media(max-width:731px){
+    .contenedor-carpetas-creadas{
+
+    }
+}

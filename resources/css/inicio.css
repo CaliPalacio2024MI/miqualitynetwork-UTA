@@ -1,0 +1,97 @@
+/* Ocultar scroll en navegadores basados en Webkit (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.scroll-container {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer y Edge */
+}
+.linea-dorada {
+    width: 20%;
+        height: 4px;
+        background-color: #daa520;
+        border-radius: 2px;
+        display: block;
+    }
+/* Disable text and image selection */
+.carousel-container {
+    user-select: none; /* Prevent text selection */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+
+}
+
+.carousel-container img {
+    pointer-events: none;
+}
+
+/*seccion de alerta de no autorizado*/
+.contenedor-alerta-no-autorizado{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    width: 40%;
+    height: 60%;
+    transform: translate(60%,30%);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center!important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+    z-index: 100;
+}
+.titulo-alerta-no-autorizado{
+    font-size: x-large;
+}
+.icono-alerta-no-autorizado{
+    width: 150px!important;
+    height: 150px!important;
+}
+.btn-aceptar-alerta-no-autorizado{
+    background-color: #092034;
+    width: 150px!important;
+    height: 50px!important;
+    border-radius: 0.5rem;
+    color: white;
+    transition: all 0.3s ease;
+}
+.btn-aceptar-alerta-no-autorizado:hover{
+    background-color: #BC8A55;
+    transform: scale(1.2);
+}
+/*fin de seccion de alerta no autorizado*/
+@media(max-width:431px){
+    .contenedor-alerta-no-autorizado{
+        width: 60%;
+        height: 50%;
+        transform: translate(0%,30%);
+        z-index: 100;
+    }
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+    .carousel-container .min-w-[300px] {
+        min-width: 150px; /* Reduce el ancho mínimo de los recuadros */
+        padding: 8px; /* Mantén el relleno interno */
+    }
+
+    .carousel-container img {
+        width: 40px; /* Reduce el tamaño de las imágenes */
+        height: 40px;
+    }
+
+    .carousel-container h3 {
+        font-size: 0.9rem; /* Reduce el tamaño del texto del título */
+    }
+
+    .carousel-container p {
+        font-size: 0.8rem; /* Reduce el tamaño del texto del párrafo */
+    }
+}

@@ -1,0 +1,861 @@
+/* Estilo para el titulo de la pagina */
+.tamaño-titulo{
+    width:100%;
+    margin-bottom: 40px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+}
+.titulo{
+    background-color: #BABABA;
+    width: 90%;
+    border-radius: 3rem;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    height: 50px!important;
+    font-size: 1.7rem!important;
+}
+/*seccion de alerta de registro de proceso*/
+.contenedor-alerta-registro-proceso{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    width: 40%;
+    height: 60%;
+    transform: translate(55%, 20%);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center!important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+.titulo-alerta-registrado{
+    font-size: xx-large;
+}
+.icono-completado-registro-alerta{
+    width: 280px;
+    height: 200px;
+}
+.btn-aceptar-boton-registro-alerta{
+
+    background-color: #092034;
+    width: 150px!important;
+    height: 80px!important;
+    border-radius: 1rem;
+    color: white;
+    transition: all 0.3s ease;
+}
+.btn-aceptar-boton-registro-alerta:hover{
+    background-color: #BC8A55;
+    transform: scale(1.2);
+}
+/*fin de seccion de alerta de registro de proceso*/
+
+/*seccion de alerta de eliminacion de proceso*/
+.contenedor-alerta-eliminacion-proceso{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    width: 40%;
+    height: 60%;
+    transform: translate(55%, 20%);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center!important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+
+}
+.titulo-alerta-proceso-eliminado{
+    font-size: xx-large;
+}
+.icono-completado-eliminiar-alerta-proceso{
+    width: 200px;
+    height: 200px;
+}
+.btn-borrar-proceso-alerta,.btn-cancelar-proceso-alerta{
+    background-color: #092034;
+    width: 150px!important;
+    height: 80px!important;
+    border-radius: 1rem;
+    color: white;
+    transition: all 0.3s ease;
+}
+.btn-borrar-proceso-alerta:hover{
+    background-color: #e22117;
+    transform: scale(1.2);
+}
+.btn-cancelar-proceso-alerta:hover{
+    background-color: #3e4646;
+    transform: scale(1.2);
+}
+.contenedo-aceptar-cancelar{
+    display: flex;
+    gap: 30px;
+}
+/*fin de seccion de alerta de Elimininacion de proceso*/
+
+/*seccion de alerta de Modificacion de proceso*/
+.contenedor-alerta-modificar-proceso{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    width: 40%;
+    height: 25%;
+    transform: translate(55%, 60%);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center!important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   display: none;
+}
+.titulo-alerta-proceso-modificar{
+    font-size: xx-large;
+}
+.icono-modificar-alerta-proceso{
+    width: 200px;
+    height: 200px;
+}
+.btn-aceptar-proceso-alerta,.btn-cancelar-modificacion-proceso-alerta{
+    background-color: #092034;
+    width: 150px!important;
+    height: 60px!important;
+    border-radius: 1rem;
+    color: white;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+.btn-aceptar-proceso-alerta:hover{
+    background-color: #BC8A55;
+    transform: scale(1.2);
+}
+.btn-cancelar-modificacion-proceso-alerta:hover{
+    background-color: #3e4646;
+    transform: scale(1.2);
+}
+.contenedo-aceptar-cancelar{
+    display: flex;
+    gap: 30px;
+}
+/*fin de seccion de alerta de Modificacion de proceso*/
+
+
+
+.campo{
+    text-align: center;
+}
+/* DIV contedor de los formularios de registro y modificacion de procesos */
+.Contenido-procesos-registro-edicion{
+    display: flex;
+    width: 100%;
+    overflow-y: auto!important;
+    height: 100%;
+}
+
+.nombre-registro{
+    font-size: x-large;
+}
+.formulario-registro-procesos {
+    width: 100%;
+    max-width: 900px; /* O el ancho que prefieras */
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/*seccion de edicion y  borrado de procesos*/
+.contenedor-procesos-edicion{
+    margin: 0 auto;
+    padding: 20px 20px 40px;
+    width: 500px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+.formulario-edicion {
+    width: 100%!important;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.grupo-proceso-eliminacion-modificacion {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+.seccion-procesos{
+    display:flex;
+    width: 100%;
+    gap:105px;
+}
+.txt-tipo-proceso{
+    margin-left: 50px!important;
+}
+.txt-nomb-proceso,.txt-tipo-proceso{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.btn-borrar {
+    display: block;
+    width: 40px;
+    height: 50px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn-actualizar {
+    display: none;
+    width: 40px;
+    height: 50px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-actualizar:hover,.btn-borrar:hover{
+    transform: scale(1.3);
+}
+.icono-modificacion,.icono-eliminacion{
+    width: 35px;
+    height: 35px;
+}
+#icono_modificacion{
+    width: 30px;
+    height: 30px;
+}
+.input-tipo-proceso{
+    width: 200px;
+    height: 50px;
+    border: 2px solid #000!important;
+    border-radius: 10px!important;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+.input-nombre-proceso{
+    width: 250px;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px solid #000!important;
+    border-radius: 10px!important;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+.formulario-modificacion-nombre-proceso{
+    display: flex;
+}
+
+.formulario-borrar-proceso{
+    display: flex;
+}
+.linea-dorada-procesos {
+    border: none;
+    height: 3px; /* Grosor de la línea */
+    background-color: #BC8A55; /* Efecto dorado */
+    width: 100%; /* Ancho completo */
+
+}
+/*fin de seccion de edicion y  borrado de procesos*/
+
+
+.campo {
+    margin-bottom: 15px;
+}
+/* Estilo para los campos de entrada de texto */
+.input-text {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: 2px solid #000!important;
+    border-radius: 10px!important;
+    text-align: center;
+}
+.select-estilo{
+    border-radius: 4px;
+}
+.btn-registro_proceso {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #092034;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+
+    transition: all 0.3s ease;
+}
+.btn-registro_proceso:hover{
+    transform: scale(1.05);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #BC8A55;
+}
+.buscar{
+    margin-left:10px;
+    width: 100%;
+    padding: 10px;
+    background-color: #092034;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+.buscar:hover,
+.btn-cambio:hover {
+    background-color: #BC8A55;
+    transform: scale(1.05);
+}
+.tipo-proceso {
+    font-weight: 500;
+    color: #555;
+}
+
+@media (max-width: 2600px) {
+    .formulario-registro-procesos{
+        height: 350px;
+        width: 600px;
+        margin-right: 0;
+    }
+    .contenedor-procesos-edicion{
+        height: 800px;
+        width: 850px;
+        margin-left: 100px;
+    }
+    .formulario-edicion{
+        height: 100%;
+    }
+    .btn-registro_proceso{
+        margin-top: 50px;
+    }
+
+
+    .btn-borrar {
+        display: block;
+        width: 40px;
+        height: 50px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+    }
+
+    .btn-actualizar {
+        
+        width: 40px;
+        height: 50px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+    }
+    .icono-modificacion,.icono-eliminacion{
+        width: 40px;
+        height: 40px;
+    }
+    .icono-modificacion{
+        width: 35px;
+        height: 35px;
+        margin-top: 7px;
+    }
+    .input-tipo-proceso{
+        width: 300px;
+        height: 50px;
+    }
+    .input-nombre-proceso{
+        width: 350px;
+        height: 50px;
+    }
+    .seccion-procesos{
+        display:flex;
+        width: 100%;
+        gap:170px;
+    }
+    .txt-tipo-proceso{
+        margin-left: 100px!important;
+    }
+    .txt-nomb-proceso,.txt-tipo-proceso{
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+}
+@media (max-width: 1920px) {
+    .formulario-registro-procesos{
+        height: 300px;
+        width: 500px;
+        margin-right: 0;
+    }
+    .contenedor-procesos-edicion{
+        height: 500px;
+        width: 650px;
+        margin-left: 40px;
+    }
+    .formulario-edicion{
+        height: 100%;
+        width: 100%;
+    }
+    .btn-registro_proceso{
+        margin-top: 20px;
+    }
+    .input-tipo-proceso{
+        width: 200px;
+        height: 50px;
+    }
+    .input-nombre-proceso{
+        width: 250px;
+        height: 50px;
+    }
+    .seccion-procesos{
+        display:flex;
+        width: 100%;
+        gap:90px;
+    }
+    .txt-tipo-proceso{
+        margin-left: 55px!important;
+    }
+    .txt-nomb-proceso,.txt-tipo-proceso{
+        font-size: 1.25rem;
+    }
+    .icono-modificacion{
+        width: 35px;
+        height: 35px;
+        margin-top: 7px;
+    }
+}
+@media (max-width: 1441px) {
+    .formulario-registro-procesos{
+        height: 700px;
+        width: 500px;
+        margin-right: 0;
+    }
+    .contenedor-procesos-edicion{
+        height: 900px;
+        width: 650px;
+        margin-left: 40px;
+    }
+    .formulario-edicion{
+        height: 100%;
+        width: 100%;
+    }
+    .btn-registro{
+        margin-top: 20px;
+    }
+    .input-tipo-proceso{
+        width: 150px;
+        height: 50px;
+    }
+    .input-nombre-proceso{
+        width: 200px;
+        height: 50px;
+    }
+    .seccion-procesos{
+        display:flex;
+        width: 100%;
+        gap:50px;
+    }
+    .txt-tipo-proceso{
+        margin-left: 80px!important;
+    }
+    .txt-nomb-proceso,.txt-tipo-proceso{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 1025px) {
+    .formulario-registro-procesos{
+        height: 300px;
+        width: 300px;
+        margin-right: 0;
+    }
+    .contenedor-procesos-edicion{
+        height: 900px;
+        width: 500px;
+        margin-left: 40px;
+    }
+    .formulario-edicion{
+        height: 100%;
+        width: 100%;
+    }
+    .btn-registro_proceso{
+        margin-top: 20px;
+    }
+    .input-tipo-proceso{
+        width: 100px;
+        height: 50px;
+    }
+    .input-nombre-proceso{
+        width: 200px;
+        height: 50px;
+    }
+    .seccion-procesos{
+        display:flex;
+        width: 100%;
+        gap:40px;
+    }
+    .txt-tipo-proceso{
+        margin-left: 10px!important;
+    }
+    .txt-nomb-proceso,.txt-tipo-proceso{
+        font-size: 1.1rem;
+    }
+}
+/* Responsive Table */
+@media (max-width: 769px) {
+    .Contenido-procesos-registro-edicion{
+        display: block;
+        justify-content: center!important;
+    }
+    .formulario-registro-procesos{
+        height: 350px;
+        width: 450px;
+        margin-left: 60px;
+        margin-right: none;
+    }
+    .contenedor-procesos-edicion{
+        height: 500px;
+        width: 500px;
+        margin-left: none;
+
+        margin-top: 50px;
+    }
+    .input-tipo-proceso{
+        width: 120px;
+        height: 50px;
+        font-size: small!important;
+    }
+    .input-nombre-proceso{
+        width: 200px;
+        height: 50px;
+        font-size: small!important;
+    }
+    .btn-borrar {
+        display: block;
+        width: 30px;
+        height: 40px;
+    }
+    .seccion-procesos{
+        display:flex;
+        width: 100%;
+        gap:50px;
+    }
+    .txt-tipo-proceso{
+        margin-left: 10px!important;
+    }
+    .txt-nomb-proceso,.txt-tipo-proceso{
+        font-size: 1.2rem;
+    }
+    .btn-actualizar {
+        width: 30px;
+        height: 40px;
+    }
+
+    .icono-modificacion,.icono-eliminacion{
+        width: 30px;
+        height: 30px;
+    }
+
+    .btn-registro_proceso{
+        margin-top: 60px;
+    }
+
+
+}
+@media (max-width: 431px) {
+    .Contenido-procesos-registro-edicion{
+        display: grid;
+        justify-content: center;
+    }
+    .formulario-registro-procesos{
+        height: 350px;
+        width: 250px;
+        margin-right: none;
+        margin-left: 0;
+        margin-bottom: 0 ;
+    }
+    .contenedor-procesos-edicion{
+        height: 350px;
+        width: 300px;
+        margin-left:-30;
+
+        margin-top: -140px;
+    }
+    .formulario-edicion{
+        width: 100%;
+        height: 100%!important;
+
+    }
+    .seccion-procesos{
+        display:flex;
+        width: 100%;
+        gap:10px;
+    }
+    .txt-tipo-proceso{
+        margin-left: 0px!important;
+    }
+    .txt-nomb-proceso,.txt-tipo-proceso{
+        font-size: 0.8rem;
+    }
+    .btn-registro_proceso{
+        margin-top: 0;
+    }
+    .titulo{
+        font-size:1.3rem!important;
+    }
+    .input-tipo-proceso{
+        width: 60px;
+        height: 50px;
+        font-size: small!important;
+        margin-left: -20px;
+    }
+    .input-nombre-proceso{
+        width: 100px;
+        height: 50px;
+        font-size: small!important;
+    }
+    .btn-borrar {
+        display: block;
+        width: 25px;
+        height: 35px;
+        margin-right: -40px;
+        margin-top: -10px;
+        margin-left: 10px;
+    }
+
+    .btn-actualizar {
+        width: 25px;
+        height: 35px;
+    }
+
+    .icono-modificacion,.icono-eliminacion{
+        width: 25px;
+        height: 25px;
+    }
+
+        /*seccion de alerta de registro de proceso*/
+        .contenedor-alerta-registro-proceso{
+            width: 60%;
+            height: 40%;
+            transform: translate(10%, 20%);
+            z-index: 100;
+
+        }
+        .titulo-alerta-registrado{
+            font-size: xx-large;
+        }
+        .icono-completado-registro-alerta{
+            width: 280px;
+            height: 200px;
+        }
+        .btn-aceptar-boton-registro-alerta{
+            width: 150px!important;
+            height: 80px!important;
+        }
+        /*fin de seccion de alerta de registro de proceso*/
+
+
+        /*seccion de alerta de eliminacion de proceso*/
+        .contenedor-alerta-eliminacion-proceso{
+            width: 60%;
+            height: 50%;
+            transform: translate(0%, 20%);
+            z-index: 100;
+
+
+        }
+        .titulo-alerta-proceso-eliminado{
+            font-size: xx-large;
+        }
+        .icono-completado-eliminiar-alerta-proceso{
+            width: 100px;
+            height: 100px;
+        }
+        .btn-borrar-proceso-alerta,.btn-cancelar-proceso-alerta{
+            width: 100px!important;
+            height: 50px!important;
+        }
+
+        .contenedo-aceptar-cancelar{
+            display: flex;
+            gap: 30px;
+        }
+        /*fin de seccion de alerta de Elimininacion de proceso*/
+
+        /*seccion de alerta de Modificacion de proceso*/
+        .contenedor-alerta-modificar-proceso{
+            width: 60%;
+            height: 50%;
+            transform: translate(0%, 20%);
+            z-index: 100;
+        }
+        .titulo-alerta-proceso-modificar{
+            font-size: xx-large;
+        }
+        .icono-modificar-alerta-proceso{
+            width: 100px;
+            height: 100px;
+        }
+        .btn-aceptar-proceso-alerta,.btn-cancelar-modificacion-proceso-alerta{
+            width: 100px!important;
+            height: 50px!important;
+        }
+        .btn-aceptar-proceso-alerta:hover{
+            background-color: #BC8A55;
+            transform: scale(1.2);
+        }
+
+        .contenedo-aceptar-cancelar{
+            display: flex;
+            gap: 30px;
+        }
+        /*fin de seccion de alerta de Modificacion de proceso*/
+
+
+}
+@media (max-width: 391px) {
+    .Contenido-procesos-registro-edicion{
+        display: grid;
+        justify-content: center;
+    }
+    .formulario-registro-procesos{
+        height: 350px;
+        width: 250px;
+        margin-right: none;
+        margin-left: 0;
+        margin-bottom: 0 ;
+    }
+    .contenedor-procesos-edicion{
+        position: static;
+
+        height: 300px;
+        width: 250px;
+        margin-left:0;
+        overflow-x:auto;
+        margin-top: -50px;
+    }
+    .formulario-edicion{
+        width: 100%;
+        height: 100%!important;
+
+    }
+    .seccion-procesos{
+        display:flex;
+        width: 100%;
+        gap:10px;
+    }
+    .txt-tipo-proceso{
+        margin-left: -30px!important;
+    }
+    .txt-nomb-proceso,.txt-tipo-proceso{
+        font-size: 0.8rem;
+    }
+    .btn-registro_proceso{
+        margin-top: 0;
+    }
+    .titulo{
+        font-size:1rem!important;
+    }
+    .input-tipo-proceso{
+        width: 60px;
+        height: 30px;
+        font-size: small!important;
+        margin-left: -30px;
+    }
+    .input-nombre-proceso{
+        width: 100px;
+        height: 30px;
+        font-size: small!important;
+    }
+    .btn-borrar {
+        display: block;
+        width: 20px;
+        height: 30px;
+        margin-right: -40px;
+        margin-left: 5px;
+        margin-top: 0;
+    }
+
+    .btn-actualizar {
+        width: 20px;
+        height: 30px;
+    }
+
+    .icono-modificacion,.icono-eliminacion{
+        width: 20px;
+        height: 20px;
+    }
+    
+}
+@media (max-width: 376px) {
+    .Contenido-procesos-registro-edicion{
+        display: grid;
+        justify-content: center;
+    }
+    .formulario-registro-procesos{
+        height: 250px;
+        width: 200px;
+        margin-right: none;
+        margin-left: 0;
+        margin-bottom: 0 ;
+
+    }
+    .contenedor-procesos-edicion{
+        position: absolute;
+        height: 200px;
+        width: 250px;
+        margin-left:-10;
+        overflow-x:auto;
+        margin-top: 300px;
+    }
+    .formulario-edicion{
+        width: 100%;
+        height: 100%!important;
+
+    }
+    .btn-registro_proceso{
+        margin-top: 0;
+    }
+    .nombre-registro{
+        font-size:medium;
+    }
+    .titulo{
+        font-size:1rem!important;
+    }
+    .btn-aceptar-proceso-alerta,.btn-cancelar-modificacion-proceso-alerta{
+        width: 90px!important;
+        height: 50px!important;
+    }
+    .btn-borrar-proceso-alerta,.btn-cancelar-proceso-alerta{
+        width: 90px!important;
+        height: 50px!important;
+    }
+}
+
+/*# sourceMappingURL=styles.css.map */

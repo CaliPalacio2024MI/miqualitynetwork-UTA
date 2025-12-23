@@ -1,0 +1,134 @@
+/* Contenedor principal de contenido */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+    background-color: #F4F4F4;
+}
+/* Estilo del contenido de propiedades */
+.content {
+    width: 100%;
+    max-width: 450px;
+    padding: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Distribución del contenido de formulario + tabla */
+.contenido-centros {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+/* Formulario */
+.formulario-centro {
+    background-color: transparent;
+    padding: 20px;
+    border: none;
+    width: 300px;
+    flex-shrink: 0;
+    margin-left: 100px;
+}
+.formulario-centro label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+.formulario-centro input,
+.formulario-centro select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Buscador */
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+}
+.search-bar input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.search-bar button {
+    background-color: #BC8A55;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Botón crear */
+.boton-crear {
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    background-color: #BC8A55;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+.boton-crear:hover,
+button:hover {
+    background-color: #092034;
+}
+
+/* Tabla de centros */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #092034;
+    color: white;
+}
+.actions {
+    display: flex;
+    gap: 10px;
+}
+.editarusuario, .eliminarusuario {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.editarusuario img, .eliminarusuario img {
+    width: 20px;
+    height: 20px;
+}
+input[type="file"] {
+    margin-top: 10px;
+    font-size: 9px;
+    font-family: 'Poppins';
+    background-color: #BC8A55;
+    cursor: pointer;
+}
+input[type="file"]:hover {
+    background-color: #092034; /* Azul oscuro */
+}

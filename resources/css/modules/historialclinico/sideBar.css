@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('/imagenes/fondo.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna */
+    color: black; /* Color de texto suave */
+}
+
+#contentCompanies {
+    background: #092034; /* Fondo oscuro más sólido con transparencia */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    
+}
+
+.logo{
+    height: 65px; /* Altura fija para el logo */
+    margin-right: 20px;
+    filter: brightness(0) invert(1);
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacio entre los elementos de navegación */
+}
+
+.navigation button{
+    background: none;
+    border: none;
+    color: #f0f0f0;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease;
+}
+.dropdown {
+    background: none;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navigation button:hover, .dropdown:hover > button {
+    color: #BC8A55;
+}
+.navigation a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+.navigation a:hover, .dropdown:hover > a {
+    color: #BC8A55;
+}
+
+.dropdown-content a {
+    display: block;
+    color: #f0f0f0;
+    padding: 10px 15px;
+    text-align: left;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    min-width: 150px; /* Ancho mínimo del dropdown */
+    padding: 5px 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-content button, .dropdown-content a {
+    color: #f0f0f0;
+    padding: 10px 15px;
+    text-align: left;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.dropdown-content button:last-child, .dropdown-content a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-content button:hover, .dropdown-content a::hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.logout-button {
+    background: none;
+    border: none;
+    color: #f0f0f0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.logout-button:hover {
+    color: red;
+}
+.iconos {
+    height: 25px;            /* Tamaño más estándar para íconos */
+    width: auto;               /* Mantiene la proporción original */
+    margin-right: 8px;         /* Espacio a la derecha */
+    filter: brightness(0) invert(1); /* Convierte el icono a blanco si es negro */
+    display: inline-block;     /* Asegura que se alinee con texto u otros ítems */
+    vertical-align: middle;    /* Centrado vertical si va con texto */
+}

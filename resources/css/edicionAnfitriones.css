@@ -1,0 +1,503 @@
+/*seccion de alerta de Modificacion de anfitriones*/
+.contenedor-alerta-modificar-anfitrion{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    width: 40%;
+    height: 30%;
+    transform: translate(60%, 60%);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center!important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 100;
+    display: none;
+}
+.titulo-alerta-anfitrion-modificar{
+    font-size: xx-large;
+}
+.icono-modificar-alerta-anfitrion{
+    width: 200px;
+    height: 200px;
+}
+.btn-aceptar-anfitrion-modificacion,.btn-cancelar-modificacion-anfitrion-alerta{
+    background-color: #092034;
+    width: 150px!important;
+    height: 60px!important;
+    border-radius: 1rem;
+    color: white;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+.btn-aceptar-anfitrion-modificacion:hover{
+    background-color: #BC8A55;
+    transform: scale(1.2);
+}
+.btn-cancelar-modificacion-anfitrion-alerta:hover{
+    background-color: #3e4646;
+    transform: scale(1.2);
+}
+.contenedor-aceptar-cancelar{
+    display: flex;
+    gap: 30px;
+}
+/*fin seccion de alerta de Modificacion de anfitriones*/
+
+
+/* CONTENEDOR GENERAL PARA EDITAR TODA LA INFORMACION DE ANFITRION */
+.formularios {
+    display: flex;
+    min-height: 100vh;
+    margin-top: 20px;
+    overflow-y: auto!important;
+    height: 100%;
+}
+
+/*SEGUNDO CONTENEDOR QUE MUESTRA TODO EL CONTENIDO*/
+.formulario-edicion {
+    position: relative;
+    margin: 0 auto;
+    /*padding-left: 20px ;
+    padding-right: 20px;*/
+    width: 580px; /* Aumentado para mayor espacio */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    min-height: 400px;
+    max-height: 1600px;
+    z-index: 1;
+
+}
+/*CONTENEDOR PARA EL TITULO Y BOTON DE REGRESO DE LA PAGINA DE MODIFCACION DE USUARIO*/
+.contenedor-titulo-editar-anfitrion{
+    background-color: #092034 !important;
+    position: sticky;
+    color: white;
+    top: 0;
+    z-index: 100; /* Asegura que esté sobre otros elementos */
+    padding: 10px;
+    min-height: 100px;
+    align-items: center;
+    width: 100%;
+}
+/*BOTON PARA REGRESAR A LA PAGINA DE CREAR USUARIOS*/
+.btn-recargar-regresar{
+    background-color: gray;
+    width: 40px;
+    border-radius: 1rem;
+}
+/*TITULO DEL TEXTO DE USUARIO A MODIFICAR*/
+.titulo-modificar {
+    text-align: center;
+}
+
+/*PADDING PARA TODOS LOS INPUTS GENERALES*/
+.padding-modificador{
+    padding-left: 20px;
+    padding-right: 5px;
+
+}
+
+/*INICIO DE SECCION PARA ACOMODAR LOS INPUT TEXTS DE LA INFORMACION DEL ANFITRION*/
+
+
+.form-group-row {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los elementos */
+    gap: 15px; /* Espacio entre los campos */
+    margin-bottom: 0px;
+}
+
+/* ESTE DIV HACE QUE TODO EL CONTENIDO TENGA EL MISMO ANCHO */
+.form-group {
+    flex: 1;
+}
+
+/* Asegura que el input ocupe todo el ancho dentro de su contenedor */
+.form-group .form-input {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px; /* Espacio entre los campos */
+    width: 100%; /* Se adapta al ancho del contenedor */
+}
+.form-group .form-label {
+    display: block; /* Coloca el label arriba del input */
+    font-weight: bold;
+    color: #092034;
+    margin-bottom: 5px; /* Espacio entre el label y el input */
+}
+.form-group .form-input {
+    width: 100%;
+    padding: 10px 5px;
+    border: none;
+    border-bottom: 2px solid black; /* Línea inferior */
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+    transition: border-color 0.3s;
+}
+
+.form-input{
+    background: none;
+    color:#706c6c;
+    padding: .6em .3em;
+    border:none;
+    outline: none;
+    border-bottom: 2px solid black;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.form-group .form-input:focus {
+    border-bottom: 2px solid #092034; /* Cambia color al enfocarse */
+}
+
+
+/*FIN DE SECCION PARA ACOMODAR LOS INPUT TEXTS DE LA INFORMACION DEL ANFITRION*/
+
+/*SOLO OCULTA LA SECCION DE PRIVILEGIOS PARA NO OCUPAR TODO EL ESPACIO*/
+.actualizar-privilegios{
+    display: none;
+}
+
+/* Estilo para los campos */
+.campo {
+    margin-bottom: 20px;
+}
+
+/* Estilo para el botón de MODIFICAR Y MOSTRAR PRIVILEGIOS*/
+.btn-modificar,
+.btn-privilegios {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #092034;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn-recargar-regresar:hover,
+.btn-privilegios:hover,
+.btn-modificar:hover {
+    background-color: #BC8A55;
+    transform: scale(1.05);
+}
+
+#Calidad{
+    display: none;
+}
+#Ambiental{
+    display: none;
+}
+#Salud{
+    display: none;
+}
+#Informacion{
+    display: none;
+}
+#Alimentaria{
+    display: none;
+}
+
+
+/* Estilo para las etiquetas */
+label {
+    display: block;
+    font-weight: bold;
+    color: #092034;
+    margin-bottom: 5px;
+}
+/* Estilo para los fieldsets */
+fieldset {
+    border: none;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #fefefe; /* Ligero fondo para destacar */
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+/* Estilo para las leyendas de los fieldsets */
+legend {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+/* Estilo para los labels dentro de fieldsets */
+fieldset label {
+    display: inline-block;
+    width: 30%; /* Organizar en 3 columnas */
+    margin-bottom: 10px;
+    font-weight: normal;
+    vertical-align: top; /* Alinear verticalmente */
+}
+
+/* Estilo para los inputs de radio y checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+
+@media(max-width:2564px){
+    .formularios{
+        justify-content: center!important;
+    }
+    .formulario-edicion{
+        width:1200px;
+        height: 850px;
+        font-size: x-large;
+    }
+    .padding-modificador button {
+        display: block;
+        margin: 10px auto; /* Centra horizontalmente */
+        text-align: center;
+        font-size: x-large;
+        width: 80%;
+    }
+    .form-input {
+        font-size: x-large !important; /* Fuerza el cambio de tamaño */
+    }
+    .titulo-modificar {
+        font-size: 2rem;
+
+    }
+
+    .btn-modificar{
+        margin-top: 40px!important;
+
+    }
+
+}
+@media (max-width: 1920px) {
+
+    .formulario-edicion{
+        width: 900px;
+        height: 520px;
+        font-size: large !important;
+    }
+    .padding-modificador button {
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+        width: 80%;
+        font-size: large !important;
+    }
+    .form-input {
+        font-size: large !important;
+    }
+    .titulo-modificar {
+        font-size: x-large;
+    }
+ 
+}
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 1024px) {
+
+    .formularios {
+        display: block;
+        min-height: 100vh;
+        margin-top: 20px;
+        justify-content: center!important;
+        padding: 0;
+        overflow-y:hidden!important;
+    }
+
+    .formulario-edicion {
+        width: 670px;
+        height: 40px;
+        top:30px;
+        justify-content: center;
+    }
+    .form-group-row{
+        display: block;
+    }
+    fieldset label {
+        width: 100%;
+    }
+
+
+    .barra-buscador {
+        width: 70%;
+        padding: 8px 16px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        color: #4a5568;
+        outline: none;
+        transition: box-shadow 0.2s ease-in-out;
+    }
+
+    .btn-modificar-principal{
+        width: 100%;
+    }
+
+}
+@media (max-width: 769px) {
+
+    .formularios {
+        display: block;
+        min-height: 100vh;
+        margin-top: 20px;
+        justify-content: center!important;
+        padding: 0;
+        overflow-y:hidden!important;
+    }
+ 
+    .formulario-edicion {
+        width: 570px;
+        height: 40px;
+        top:30px;
+        justify-content: center;
+    }
+    .form-group-row{
+        display: block;
+    }
+    fieldset label {
+        width: 100%;
+    }
+
+
+    .barra-buscador {
+        width: 70%;
+        padding: 8px 16px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        color: #4a5568;
+        outline: none;
+        transition: box-shadow 0.2s ease-in-out;
+    }
+
+    .btn-modificar-principal{
+        width: 100%;
+    }
+
+
+}
+@media (max-width: 431px) {
+    .formularios {
+        display: block;
+        min-height: 100vh;
+        margin-top: 20px;
+        justify-content: center!important;
+        padding: 0;
+        overflow-y:hidden!important;
+    }
+
+    .formulario-edicion {
+        width: 270px;
+        height: 700px;
+        top:30px;
+        justify-content: center;
+        margin-left: 0;
+    }
+    .form-group-row{
+        display: block;
+    }
+    fieldset label {
+        width: 100%;
+    }
+
+
+    .barra-buscador {
+        width: 70%;
+        padding: 8px 16px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        color: #4a5568;
+        outline: none;
+        transition: box-shadow 0.2s ease-in-out;
+    }
+
+    .btn-modificar-principal{
+        width: 100%;
+    }
+
+    /*seccion de alerta de Modificacion de anfitriones*/
+    .contenedor-alerta-modificar-anfitrion{
+        width: 60%;
+        height: 50%;
+        transform: translate(0%, 20%);
+        z-index: 100;
+    }
+    .titulo-alerta-anfitrion-modificar{
+        font-size: xx-large;
+    }
+    .icono-modificar-alerta-anfitrion{
+        width: 100px;
+        height: 100px;
+    }
+    .btn-aceptar-anfitrion-modificacion,.btn-cancelar-modificacion-anfitrion-alerta{
+        width: 100px!important;
+        height: 60px!important;
+        border-radius: 0.5rem;
+    }
+    .contenedor-aceptar-cancelar{
+        margin-top: 30px;
+        display: flex;
+        gap: 30px;
+    }
+    /*fin seccion de alerta de Modificacion de anfitriones*/
+}
+@media (max-width: 391px) {
+
+    .formulario-edicion {
+        width: 200px;
+        top:10px;
+        margin-left: 5px;
+        margin-bottom: 600px;
+    }
+    .form-group-row{
+        display: block;
+    }
+    fieldset label {
+        width: 100%; 
+    }
+    .formularios {
+        display: block;
+        min-height: 100vh;
+        margin-top: 20px;
+    }
+    .barra-buscador {
+        width: 70%;
+        padding: 8px 16px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        color: #4a5568;
+        outline: none;
+        transition: box-shadow 0.2s ease-in-out;
+    }
+}
+@media (max-width: 376px) {
+
+    .formulario-edicion {
+        width: 220px;
+        height: 430px;
+        top:50px;
+        margin-left: 5px;
+        margin-top: 0;
+
+    }
+    .padding-modificador{
+        height: 100%;
+    }
+
+    .btn-aceptar-anfitrion-modificacion,.btn-cancelar-modificacion-anfitrion-alerta{
+
+        width: 90px!important;
+        height: 60px!important;
+        border-radius: 0.5rem;
+    }
+ }

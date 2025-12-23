@@ -1,0 +1,36 @@
+.total-plan{
+    position: fixed;
+    top: 10%;
+    height: 15%;
+    width: 20%;
+    background-color:#092034;
+}
+
+.total-cost{
+    position: fixed;
+    top: 10%;
+    right: 30%;
+    height: 15%;
+    width: 20%;
+    background-color:#092034;
+}
+
+.stats{
+    position: fixed;
+    top: 30%;
+    width: 70%;
+    height: 60%;
+}
+
+.bar-chart{
+    position: fixed;
+}
+
+.txt{
+    color: white;
+}
+
+.title{
+    position: fixed;
+   padding-top: 2%;
+}

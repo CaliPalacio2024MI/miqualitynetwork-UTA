@@ -1,0 +1,60 @@
+/* Contenedor principal de carpetas */
+.folder-container {
+    display: inline-block;
+    margin: 10px;
+}
+
+/* Estilos base del botón de carpeta */
+.btn-carpeta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: transparent;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+    border: 2px solid transparent;
+}
+
+/* Estilo de la imagen dentro del botón */
+.folder-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto hover */
+.btn-carpeta:hover {
+    background-color: rgba(255, 204, 0, 0.2);
+    color: #000;
+    transform: translateY(-3px);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+    border-color: #ffcc00;
+}
+
+/* Efecto hover en la imagen */
+.btn-carpeta:hover .folder-icon {
+    transform: scale(1.1);
+}
+
+/* Responsive: Ajuste en pantallas pequeñas */
+@media (max-width: 768px) {
+    .btn-carpeta {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    .folder-icon {
+        width: 30px;
+        height: 30px;
+    }
+    .scrollable-mobile {
+        max-height: 100vh;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}

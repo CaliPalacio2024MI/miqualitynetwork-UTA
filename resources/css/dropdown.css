@@ -1,0 +1,368 @@
+/* Estilos generales */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+ul li {
+    position: relative;
+}
+
+ul li a {
+    color: white;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Animacion para cada boton del dropdown */
+ul li a:hover {
+    transform: scale(1.1);
+}
+
+
+/* Dropdowns específicos */
+ul li ul.dropdown-calidad,
+ul li ul.dropdown-seguridad-ambiental,
+ul li ul.dropdown-seguridad-salud,
+ul li ul.dropdown-seguridad-informacion,
+ul li ul.dropdown-seguridad-alimentaria {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    left: 100%;
+    width: 150px;
+    border-radius: 9px;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+
+/* Botón: Calidad */
+ul li ul.dropdown-calidad {
+    background: #0069c0;
+}
+ul li:hover ul.dropdown-calidad,
+ul li:focus-within ul.dropdown-calidad {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Botón: Seguridad Ambiental */
+ul li ul.dropdown-seguridad-ambiental {
+    background: #00b02c;
+}
+ul li:hover ul.dropdown-seguridad-ambiental,
+ul li:focus-within ul.dropdown-seguridad-ambiental {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Botón: Seguridad y Salud */
+ul li ul.dropdown-seguridad-salud {
+    background: #ff6400;
+}
+ul li:hover ul.dropdown-seguridad-salud,
+ul li:focus-within ul.dropdown-seguridad-salud {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Botón: Seguridad de la Información */
+ul li ul.dropdown-seguridad-informacion {
+    background: #999b9e;
+}
+ul li:hover ul.dropdown-seguridad-informacion,
+ul li:focus-within ul.dropdown-seguridad-informacion {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Botón: Seguridad Alimentaria */
+ul li ul.dropdown-seguridad-alimentaria {
+    background: #ed000a;
+}
+ul li:hover ul.dropdown-seguridad-alimentaria,
+ul li:focus-within ul.dropdown-seguridad-alimentaria {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Elementos dentro del dropdown (color de letras, bordes etc) */
+ul li ul.dropdown-calidad li a,
+ul li ul.dropdown-seguridad-ambiental li a,
+ul li ul.dropdown-seguridad-salud li a,
+ul li ul.dropdown-seguridad-informacion li a,
+ul li ul.dropdown-seguridad-alimentaria li a {
+    padding: 10px;
+    display: block;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+/* animacion y coloreado de los dropdown*/
+ul li ul.dropdown-calidad li a:hover,
+ul li ul.dropdown-seguridad-ambiental li a:hover,
+ul li ul.dropdown-seguridad-salud li a:hover,
+ul li ul.dropdown-seguridad-informacion li a:hover,
+ul li ul.dropdown-seguridad-alimentaria li a:hover {
+    background: #000000;
+    transform: scale(1.1);
+}
+
+/* Dropdown anidado para DOCUMENTACION DE LA OPERACION */
+ul li ul.dropdown-anidado-calidad {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 120px;
+    margin: 0;
+    padding: 0;
+    background: #004080;
+    border-radius: 9px;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+/* Botones internos del dropdown anidado DE DOCUMENTACION DE LA OPERACION */
+ul li ul.dropdown-anidado-calidad li a {
+    padding: 10px;
+    display: block;
+    color: white;
+    background: #0069c0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+
+}
+
+
+ul li ul.dropdown-anidado-calidad li a:hover {
+    background: #000000;
+    transform: scale(1.1);
+}
+
+/* Mostrar dropdown anidado solo al hacer hover en "Documentación de la Operación" */
+ul li ul.dropdown-calidad > li:hover > ul.dropdown-anidado-calidad {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Dropdown anidado para Procesos Operativos */
+ul li ul.dropdown-anidado-Procesosoperativos {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 150px;
+    background: #0069c0;
+    border-radius: 9px;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+
+/* Mostrar dropdown anidado dentro de "Procesos Operativos" */
+ul li ul.dropdown-anidado > li:hover > ul.dropdown-anidado-Procesosoperativos,
+ul li ul.dropdown-anidado > li:focus-within > ul.dropdown-anidado-Procesosoperativos {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Botones internos del dropdown anidado */
+ul li ul.dropdown-anidado-Procesosoperativos li a {
+    padding: 10px;
+    display: block;
+    color: white;
+    background: #0069c0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover para botones internos */
+ul li ul.dropdown-anidado-Procesosoperativos li a:hover {
+    background: #000000;
+    transform: scale(1.1);
+}
+
+
+
+/* dropdown anidado de ambiental*/
+ul li ul.dropdown-anidado-ambiental{
+    font-size: 0.8rem;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    background: #00b02c;
+    border-radius: 9px;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+
+ul li ul.dropdown-anidado-ambiental li a {
+    padding: 10px;
+    display: block;
+    color: white;
+    background: #00b02c;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+ul li ul.dropdown-anidado-ambiental li a:hover {
+    background: #000000;
+    transform: scale(1.1);
+
+}
+
+
+ul li ul.dropdown-seguridad-ambiental > li:hover > ul.dropdown-anidado-ambiental {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Dropdown anidado para Seguridad y Salud */
+ul li ul.dropdown-anidado-salud {
+    position: absolute;
+    top: 0;
+    left: 102%;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    background: #ff6400;
+    border-radius: 9px;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+
+/* Mostrar dropdown anidado dentro de Seguridad y Salud */
+ul li ul.dropdown-seguridad-salud > li:hover > ul.dropdown-anidado-salud,
+ul li ul.dropdown-seguridad-salud > li:focus-within > ul.dropdown-anidado-salud {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Botones internos del dropdown anidado */
+ul li ul.dropdown-anidado-salud li a {
+    padding: 10px;
+    display: block;
+    color: white;
+    background: #ff6400;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover para botones internos */
+ul li ul.dropdown-anidado-salud li a:hover {
+    background: #000000;
+    transform: scale(1.1);
+}
+
+/* Dropdown principal para Seguridad Alimentaria */
+ul li ul.dropdown-seguridad-alimentaria {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    background: #ed000a; /* Color de fondo para Seguridad Alimentaria */
+    border-radius: 9px;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+
+/* Mostrar el dropdown principal al hacer hover */
+ul li:hover ul.dropdown-seguridad-alimentaria,
+ul li:focus-within ul.dropdown-seguridad-alimentaria {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Botones internos del dropdown principal */
+ul li ul.dropdown-seguridad-alimentaria li a {
+    padding: 10px;
+    display: block;
+    color: white;
+    background: #ed000a;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover para botones internos del dropdown principal */
+ul li ul.dropdown-seguridad-alimentaria li a:hover {
+    background: #b00008; /* Color más oscuro al hacer hover */
+    transform: scale(1.1);
+}
+
+/* Dropdown anidado dentro de Seguridad Alimentaria */
+ul li ul.dropdown-anidado-alimentaria {
+    position: absolute;
+    top: 0;
+    left: 102%;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    background: #ff4d4d; /* Color de fondo para el dropdown anidado */
+    border-radius: 9px;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+
+/* Mostrar el dropdown anidado al hacer hover */
+ul li ul.dropdown-seguridad-alimentaria > li:hover > ul.dropdown-anidado-alimentaria,
+ul li ul.dropdown-seguridad-alimentaria > li:focus-within > ul.dropdown-anidado-alimentaria {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Botones internos del dropdown anidado */
+ul li ul.dropdown-anidado-alimentaria li a {
+    padding: 10px;
+    display: block;
+    color: white;
+    background: #cc0000;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover para botones internos del dropdown anidado */
+ul li ul.dropdown-anidado-alimentaria li a:hover {
+    background: #cc0000; /* Color más oscuro al hacer hover */
+    transform: scale(1.1);
+}

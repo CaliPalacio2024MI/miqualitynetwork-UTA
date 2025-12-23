@@ -1,0 +1,19 @@
+.top-bar {
+  background-color: #011A32;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+
+
+  position: relative; 
+  z-index: 0;  
+  width: 100%;
+}
+
+.section-title {
+  margin-left: auto;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 1rem;
+}

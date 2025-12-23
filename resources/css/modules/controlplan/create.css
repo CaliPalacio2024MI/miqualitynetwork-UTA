@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*formulario*/
+.form-alert{
+    height: 40px;
+    width: 37%;
+    left: 27.2%;
+    font-size: 15px;
+}
+
+.text-alert{
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    bottom: 6px;
+    font-size: 15px;
+}
+
+.form-button{
+    background-color: #BC8A55;
+    height: 40px;
+    width: 80px;
+    position: relative;
+    left: 36.3%;
+    font-family: "Poppins", sans-serif;
+    border-radius: 5px;
+    top: 10px;
+}
+
+.form-img{
+    padding-top: 3%;
+    width: 20%;
+    position: relative;
+    left: 40%;
+}
+
+.form-box-size{
+    width: 230px;
+    resize: none;
+}
+
+.comment{
+    width: 27.7%;
+    position: relative;
+    left: 13%;
+    font-family: "Poppins", sans-serif;
+    resize: none;
+    border-radius: 5px;
+}
+
+.left{
+    position: relative;
+    left: 100%;
+    font-family: "Poppins", sans-serif;
+    border-radius: 5px;
+}
+
+.right{
+    position: relative;
+    left: 116%;
+    font-family: "Poppins", sans-serif;
+    border-radius: 5px;
+}
+
+/*tabla*/
+.actions{
+    border: 1px solid;
+    border-spacing: 0px;
+    border-collapse: separate;
+}
+
+.table-section{
+    position: absolute;
+    top: 20%;
+    padding-left: 50%;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+th{
+    background-color: #092034;
+    color: white;
+    top: 0px;
+    position: sticky;
+}
+
+.actions tr:hover{
+    background-color: #BABABA;
+}
+
+.next-btn{
+    background-color: #BC8A55;
+    height: 40px;
+    width: 80px;
+    position: relative;
+    left: 80%;
+    font-family: "Poppins", sans-serif;
+    border-radius: 5px;
+}
+
+/*signature*/
+.signature-pad-form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.signature-pad {
+  cursor: pointer;
+  border: 2px solid #000;
+  border-radius: 4px;
+}
+
+.color-btn{
+    background-color: #BC8A55;
+    font-family: "Poppins", sans-serif;
+    border-radius: 5px;
+}

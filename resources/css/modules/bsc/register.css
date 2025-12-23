@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'Houschka Pro';
+    src: url('path/to/HouschkaPro.woff2') format('woff2'),
+         url('path/to/HouschkaPro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('../imagenes/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display:    flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+div.registro {
+    background: rgba(203, 196, 196, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+div.usuario {
+   
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+div.contraseña {
+    
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+div.confirmar-contraseña {
+    
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+a {
+    color: #171819;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.register-container h1 {
+    margin-bottom: 20px;
+}
+
+.register-container input[type="text"],
+.register-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px -10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+}

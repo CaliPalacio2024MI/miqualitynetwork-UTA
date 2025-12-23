@@ -1,0 +1,106 @@
+.form-wrapper {
+  max-width: 900px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  height: 85vh;
+  border: 3px solid #BC8A55;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-header h1 {
+  margin: 0;
+  color: #092034;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+form fieldset {
+  padding: 25px;
+  border-radius: 16px;
+  margin-bottom: 25px;
+  background-color: #E0E0E0;
+}
+
+form legend {
+  font-weight: bold;
+  color: #092034;
+  background-color: #fff;
+  padding: 5px 15px;
+  border-radius: 8px;
+  font-size: 18px;
+  
+  display: inline-block;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #092034;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="tel"],
+textarea,
+select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1.5px solid #BABABA;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #BC8A55;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(188, 138, 85, 0.2);
+}
+
+.grid-2, .grid-3, .grid-4 {
+  display: grid;
+  gap: 20px;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.btn-submit {
+  display: block;
+  margin: 40px auto 0 auto;
+  background-color: #BC8A55;
+  color: white;
+  padding: 14px 36px;
+  border: none;
+  border-radius: 14px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-submit:hover {
+  background-color: #092034;
+  transform: scale(1.03);
+}

@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*table{
+position: relative;
+border-spacing: 0;
+border-collapse: separate;
+border-radius: 10px;
+border: 1px solid;
+}
+
+.tabla{
+    top: 50px;
+    position: relative;
+    overflow-y: auto;
+    margin-bottom: 120px;
+}
+
+th, td{
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+td{
+    top: 200px;
+}
+
+th{
+    background-color: #092034;
+    color: white;
+    top: 60px;
+    position: sticky;
+}*/
+
+
+
+
+.data-table{
+    border: 1px solid;
+    border-spacing: 0px;
+    border-collapse: separate;
+}
+
+
+
+.table-content{
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+th{
+    background-color: #092034;
+    color: white;
+    top: 0px;
+    position: sticky;
+}
+
+
+
+
+
+.data-table tr:hover{
+    background-color: #BABABA;
+}
+
+.modal-pos{
+    top: 25%;
+}
+
+.pag-pos{
+    padding-right: 10%;
+    padding-top: 4%;
+}
+
+.border{
+    border-radius: 5px;
+}
+
+.search-pos{
+    padding-top: 3%;
+}
+
+.close-search{
+    padding-left: 4%;
+}
+
+.table-search-pos{
+    padding-top: 2%;
+    top: 50%;
+    width: 50%;
+}
+
+.reason-box{
+    width: 280px;
+    resize: none;
+}
+
+.search-bar{
+    width: 60%;
+}
+
+
+
+/*stats*/
+
+.stats{
+    position: fixed;
+    top: 30%;
+    right: 2%;
+    width: 40%;
+    height: 40%;
+}
+
+.bar-chart{
+    position: fixed;
+}
+
+
+
+
+.total-plan{
+    position: fixed;
+    top: 10%;
+    left: 58%;
+    height: 10%;
+    width: 15%;
+    background-color:#092034;
+}
+
+.plan-details{
+    position: fixed;
+    top: 20%;
+    left: 59%;
+    height: 8%;
+    width: 14%;
+    background-color:#092034;
+}
+
+.total-cost{
+    position: fixed;
+    top: 10%;
+    right: 3%;
+    height: 10%;
+    width: 15%;
+    background-color:#092034;
+}
+
+.txt{
+    color: white;
+}
+
+.title{
+    position: fixed;
+    padding-top: 1px;
+}
+
+
+
+
+
+
+
+.table-container{
+    padding-left: 10%;
+}
+
+.details-content{
+    position: absolute;
+    padding-left: 50%;
+    top: 10%;
+}

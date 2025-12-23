@@ -1,0 +1,911 @@
+/* Estilo para el contenedor del formulario */
+.contenedor-propiedades{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+/*seccion de alerta de registro de propiedades*/
+.contenedor-alerta-registro-propiedad{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    width: 40%;
+    height: 60%;
+    transform: translate(55%, 20%);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center!important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+.titulo-alerta-registrado-propiedad{
+    font-size: xx-large;
+}
+.icono-completado-registro-alerta-propiedad{
+    width: 280px;
+    height: 200px;
+}
+.btn-aceptar-propiedad-registro-alerta{
+
+    background-color: #092034;
+    width: 150px!important;
+    height: 80px!important;
+    border-radius: 1rem;
+    color: white;
+    transition: all 0.3s ease;
+}
+.btn-aceptar-propiedad-registro-alerta:hover{
+    background-color: #BC8A55;
+    transform: scale(1.2);
+}
+/*fin de seccion de alerta de registro de propiedades*/
+
+
+/*seccion de alerta de eliminacion de PROPIEDADES*/
+.contenedor-alerta-eliminacion-propiedades{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    width: 40%;
+    height: 60%;
+    transform: translate(55%, 20%);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center!important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+.titulo-alerta-propiedades-eliminado{
+    font-size: xx-large;
+}
+.icono-completado-eliminiar-alerta-propiedades{
+    width: 200px;
+    height: 200px;
+}
+.btn-borrar-propiedades-alerta,.btn-cancelar-propiedades-alerta{
+    background-color: #092034;
+    width: 150px!important;
+    height: 80px!important;
+    border-radius: 1rem;
+    color: white;
+    transition: all 0.3s ease;
+}
+.btn-borrar-propiedades-alerta:hover{
+    background-color: #e22117;
+    transform: scale(1.2);
+}
+.btn-cancelar-propiedades-alerta:hover{
+    background-color: #3e4646;
+    transform: scale(1.2);
+}
+.contenedor-aceptar-cancelar{
+    display: flex;
+    gap: 30px;
+}
+/*fin de seccion de alerta de Elimininacion de propiedades*/
+
+/*seccion de alerta de Modificacion de propiedad*/
+.contenedor-alerta-modificar-propiedad{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    width: 40%;
+    height: 25%;
+    transform: translate(55%, 50%);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center!important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+.titulo-alerta-propiedad-modificar{
+    font-size: xx-large;
+}
+.icono-modificar-alerta-propiedad{
+    width: 200px;
+    height: 200px;
+}
+.btn-aceptar-propiedad-modificacion,.btn-cancelar-modificacion-propiedad-alerta{
+    background-color: #092034;
+    width: 150px!important;
+    height: 60px!important;
+    border-radius: 1rem;
+    color: white;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+.btn-aceptar-propiedad-modificacion:hover{
+    background-color: #BC8A55;
+    transform: scale(1.2);
+}
+.btn-cancelar-modificacion-propiedad-alerta:hover{
+    background-color: #3e4646;
+    transform: scale(1.2);
+}
+.contenedor-aceptar-cancelar{
+    display: flex;
+    gap: 30px;
+}
+/*fin seccion de alerta de Modificacion de propiedad*/
+
+.campo,.campo-titulo-formulario-actualizacion{
+    text-align: center;
+}
+.nombre-registro{
+    font-size: x-large;
+}
+.formulario-registro-de-propiedades {
+    padding: 20px 20px 40px;
+    width: 700px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 200px;
+}
+
+.contenedor-formulario-edicion-propiedades {
+    padding: 10px 10px 10px;
+    height: 500px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto!important;
+    display: block;
+
+}
+.formulario-edicion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.form-modificacion-propiedad{
+    display: flex;
+}
+.tamaño-titulo{
+    width:100%;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+
+}
+.titulo{
+    background-color: #BABABA;
+    width: 90%;
+    border-radius: 3rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 50px;
+    font-size: 1.7rem;
+
+}
+
+
+.campo,.campo-titulo-formulario-actualizacion {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #092034;
+    margin-bottom: 5px;
+}
+
+/* Estilo para los campos de entrada de texto */
+.input-text {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    text-align: center;
+}
+.select-estilo{
+    border-radius: 4px;
+
+
+}
+table{
+    border: 1px solid black;
+
+}
+td{
+    border: 1px solid black;
+    text-align: center;
+}
+th{
+    border: 1px solid black;
+    text-align: center;
+}
+/* Estilo para los fieldsets */
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo para las leyendas de los fieldsets */
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Estilo para los labels dentro de fieldsets */
+fieldset label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 15px;
+    font-weight: normal;
+}
+
+
+/* Estilo para el botón de registrar */
+.btn-cambio,.btn-actualizar-propiedad {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: none;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.btn-actualizar-propiedad{
+    display: none;
+}
+.btn-registro {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #092034;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+
+    transition: all 0.3s ease;
+}
+
+
+.buscar{
+    margin-left:10px;
+    width: 100%;
+    padding: 10px;
+    background-color: #092034;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+.btn-registro:hover{
+    background-color: #BC8A55;
+    transform: scale(1.05);
+}
+.icono-eliminacion {
+    transition: transform 0.3s ease-in-out; /* Animación fluida */
+}
+
+/* Cuando el mouse pase sobre el botón, la imagen crecerá */
+.btn-cambio:hover .icono-eliminacion {
+    transform: scale(1.5); /* Aumenta el tamaño al 120% */
+}
+.btn-actualizar-propiedad:hover .icono-eliminacion {
+    transform: scale(1.5); /* Aumenta el tamaño al 120% */
+}
+.formulario-edicion {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.grupo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.nombre-propiedad-text {
+    border: 2px solid #000;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+@media(max-width:2700px){
+    .contenedor-propiedades{
+        justify-content: center!important;
+        display: flex!important;
+        gap: 100px;
+    }
+
+    .input-text{
+        height: 60px;
+        font-size: 1.5rem;
+    }
+    .btn-registro{
+        height: 80px;
+        font-size: 1.5rem;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 40px;
+    }
+    .formulario-registro-de-propiedades{
+        width: 700px;
+        height: 400px;
+
+    }
+    .contenedor-formulario-edicion-propiedades {
+        padding: 20px 20px 40px;
+        width: 800px;
+        height: 800px;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+    .formulario-edicion {
+        width: 100%;
+        align-items: center;
+
+    }
+    .nombre-propiedad-text{
+        width: 600px;
+        height: 50px;
+        font-size: 1.5rem;
+
+        margin-left: 30px;
+
+    }
+    .btn-cambio,.btn-actualizar-propiedad{
+        width: 100px;
+        height: 80px;
+        align-items: center;
+        justify-content: center;
+    }
+    .nombre-registro{
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+    .icono-eliminacion{
+        margin-top: -30px;
+        width: 50px;
+        height: 50px;
+    }
+    .form-modificacion-propiedad{
+        gap:10px;
+        display: flex;
+    }
+    .form-eliminacion-propiedad{
+        margin-left: -20;
+    }
+}
+@media (max-width: 1920px) {
+    .contenedor-propiedades{
+        justify-content: center;
+        gap: 50px;
+
+    }
+    .formulario-registro-de-propiedades {
+        padding: 20px 20px 20px;
+        width: 600px;
+        height: 250px;
+        margin-right: 0px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 0;
+
+    }
+    /*Div para borrar formularios*/
+    .contenedor-formulario-edicion-propiedades {
+        padding: 20px 20px 40px;
+        max-width: 500px;
+        height: 550px;
+        justify-content: center;
+        align-items: center;
+        overflow-y: auto;
+
+    }
+    .formulario-edicion {
+        justify-content: center;
+        margin-left: 0;
+        width: 100%;
+        align-items: center;
+        overflow-y: auto;
+        display: grid!important;
+    }
+    .form-modificacion-propiedad{
+        gap:10px;
+        display: flex;
+    }
+    .input-text{
+        height: 40px;
+        font-size: 1rem;
+
+    }
+    .btn-registro{
+        height: 50px;
+        font-size: 1rem;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-top: 0;
+    }
+    .nombre-propiedad-text{
+        width: 300px;
+        height: 40px;
+        font-size: 1rem;
+
+        margin-left: 0;
+
+    }
+    .btn-cambio,.btn-actualizar-propiedad{
+        width: 60px;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+    .nombre-registro{
+        font-size: 1.5rem;
+        margin-bottom: 25px;
+    }
+    .icono-eliminacion{
+        margin-top: -10px;
+        width: 40px;
+        height: 40px;
+    }
+
+
+}
+@media (max-width:1025px) {
+    .formulario-registro-de-propiedades{
+        display: block;
+    }
+    .propiedades{
+        justify-content: center!important;
+        display: grid!important;
+
+    }
+    .contenedor-formulario-edicion-propiedades{
+        display: block!important;
+        transform: translate(10%); 
+    }
+    .formulario-registro-de-propiedades{
+        display: block!important;
+    }
+    .contenedor-propiedades{
+        display: grid!important;
+    }
+
+}
+
+@media (max-width: 431px) {
+    .campo,.campo-titulo-formulario-actualizacion{
+        margin-bottom: 60px;
+        height: auto;
+
+    }
+    .div-registro-boton{
+        height: 100%;
+        margin-top: 50px!important;
+
+     }
+
+    .contenedor-propiedades{
+        margin-top: 0;
+        display: grid!important;
+        margin-left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .formulario-registro-de-propiedades{
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        overflow-y: auto;
+        width: 250px;
+        height: 150px!important;
+        text-align: center;
+        min-height: 250px;
+        margin-left: 0;
+    }
+
+    .contenedor-formulario-edicion-propiedades{
+        height: 450px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    .formulario-edicion {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        height: auto;
+    }
+
+
+    .titulo{
+        font-size: large;
+        margin-top: 0;
+    }
+
+
+    .btn-cambio,.btn-actualizar-propiedad {
+        
+        width: 100px;
+        font-size: 10PX;
+        padding-left: 5PX;
+        padding-right: 5PX;
+        margin-left: 0px;
+        height: 40px;
+    }
+    .btn-registro {
+        display: block;
+        min-width: 100px;
+        margin: 0 auto;
+        margin-top: 30px!important;
+    }
+
+    .contenedor-formulario-edicion-propiedades {
+        margin-top: 20px;
+        width: 260px;
+        margin-left: 0;
+        padding: 10px 10px 10px;
+        margin-bottom: 100px;
+    }
+    .formulario-edicion {
+        text-align: center;
+        width: 260px;
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+    }
+    .nombre-registro{
+        font-size: large;
+    }
+    .nombre-propiedad-text{
+        width: 140px;
+        font-size: 0.7rem;
+        margin-left: 10px;
+    }
+    .btn-cambio,.btn-actualizar-propiedad{
+        width: 50px;
+        height: 40px;
+        font-size: xx-small;
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+    .btn-registro{
+        width: 90%;
+        font-size: 1rem;
+    }
+    .input-text{
+        width: 100%;
+    }
+    .btn-cambio:hover .icono-eliminacion {
+        transform: scale(1.2); /* Aumenta el tamaño al 120% */
+    }
+    .btn-actualizar-propiedad:hover .icono-eliminacion {
+        transform: scale(1.2); /* Aumenta el tamaño al 120% */
+    }
+
+    .icono-eliminacion{
+        margin-top: -20px;
+
+        width: 25px;
+        height: 25px;
+    }
+    .form-eliminacion-propiedad{
+        margin-left: -20px!important;
+    }
+    .grupo{
+        height: 100%;
+    }
+    /*seccion de alerta de registro de propiedades*/
+    .contenedor-alerta-registro-propiedad{
+        width: 60%;
+        height: 50%;
+        transform: translate(0%, 20%);
+        z-index: 100;
+
+    }
+    .titulo-alerta-registrado-propiedad{
+        font-size: xx-large;
+    }
+    .icono-completado-registro-alerta-propiedad{
+        width: 250px;
+        height: 160px;
+    }
+    .btn-aceptar-propiedad-registro-alerta{
+        width: 150px!important;
+        height: 50px!important;
+        border-radius: 0.5rem;
+    }
+    /*fin de seccion de alerta de registro de propiedades*/
+
+
+    /*seccion de alerta de eliminacion de PROPIEDADES*/
+    .contenedor-alerta-eliminacion-propiedades{
+        width: 60%;
+        height: 40%;
+        transform: translate(0%, 20%);
+        
+    }
+    .titulo-alerta-propiedades-eliminado{
+        font-size: large;
+    }
+    .icono-completado-eliminiar-alerta-propiedades{
+        width: 80px;
+        height: 80px;
+    }
+    .btn-borrar-propiedades-alerta,.btn-cancelar-propiedades-alerta{
+        width: 100px!important;
+        height: 50px!important;
+        border-radius: 0.5rem;
+    }
+
+    /*fin de seccion de alerta de Elimininacion de propiedades*/
+
+    /*seccion de alerta de Modificacion de propiedad*/
+    .contenedor-alerta-modificar-propiedad{
+        width: 60%;
+        height: 50%;
+        transform: translate(0%, 20%);
+    }
+    .titulo-alerta-propiedad-modificar{
+        font-size: xx-large;
+    }
+    .icono-modificar-alerta-propiedad{
+        width: 100px;
+        height: 100px;
+
+    }
+    .btn-aceptar-propiedad-modificacion,.btn-cancelar-modificacion-propiedad-alerta{
+        width: 100px!important;
+        height: 50px!important;
+        border-radius: 0.5rem!important;
+    }
+    .contenedor-aceptar-cancelar{
+        display: flex;
+        gap: 20px;
+    }
+    /*fin seccion de alerta de Modificacion de propiedad*/
+    .btn-cambio{
+        margin-left: 20px;
+    }
+    .contenedor-formulario-edicion-propiedades{
+        transform: translate(0%); 
+    }
+}
+
+@media(max-width:391px){
+    .campo,.campo-titulo-formulario-actualizacion{
+        margin-bottom: 65px;
+        height: auto;
+
+    }
+    .div-registro-boton{
+        height: 100%;
+        margin-top: 50px!important;
+
+     }
+
+    .contenedor-propiedades{
+        margin-top: 0;
+        display: grid!important;
+        margin-left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .formulario-registro-de-propiedades{
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        overflow-y: auto;
+        width: 220px;
+        height: 150px!important;
+        text-align: center;
+        min-height: 250px;
+        margin-left: 0;
+    }
+
+    .contenedor-formulario-edicion-propiedades{
+        height: 370px;
+        overflow-y: auto;
+        overflow-x: hidden;
+
+    }
+
+    .contenedor-formulario-edicion-propiedades {
+        margin-top: 20px;
+        width: 245px;
+        margin-left: 0;
+        padding: 10px 10px 10px;
+        margin-bottom: 100px;
+    }
+
+    .formulario-edicion {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        text-align: center;
+        width: 231px;
+        display: flex;
+        align-items: center;
+        justify-content: center!important;
+        margin-left: none!important;
+        margin-right: none!important;
+    }
+
+
+    .titulo{
+        font-size: large;
+        margin-top: 0;
+    }
+
+
+    .btn-cambio,.btn-actualizar-propiedad {
+        
+        width: 100px;
+        font-size: 10PX;
+
+        padding-right: 5PX;
+        margin-left: 0;
+        height: 40px;
+        width: 40px!important;
+
+    }
+    .btn-cambio{
+        margin-left: 10px;
+    }
+    .btn-registro {
+        display: block;
+        min-width: 100px;
+        margin: 0 auto;
+        margin-top: 30px!important;
+    }
+    .grupo{
+        width: 100%;
+    }
+
+    .nombre-registro{
+        font-size: large;
+    }
+    .nombre-propiedad-text{
+        width: 140px;
+        font-size: 0.7rem;
+        margin-left: 10px;
+    }
+    .btn-cambio,.btn-actualizar-propiedad{
+        width: 50px;
+        height: 40px;
+        font-size: xx-small;
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+    .btn-registro{
+        width: 90%;
+        font-size: 1rem;
+    }
+    .input-text{
+        width: 100%;
+    }
+    .btn-cambio:hover .icono-eliminacion {
+        transform: scale(1.2); /* Aumenta el tamaño al 120% */
+    }
+    .btn-actualizar-propiedad:hover .icono-eliminacion {
+        transform: scale(1.1); /* Aumenta el tamaño al 120% */
+    }
+  
+    .icono-eliminacion{
+        margin-top: -20px;
+
+        width: 25px;
+        height: 25px;
+    }
+    .form-eliminacion-propiedad{
+        margin-left: -20px!important;
+    }
+}
+@media(max-width:376px){
+    .contenedor-propiedades{
+        display: block;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .formulario-registro-de-propiedades{
+        width: 200px;
+        text-align: center;
+        height: 150px;
+        margin-left: 0;
+        margin-top: -50px;
+        overflow-y: hidden!important;
+    }
+    .campo-titulo-formulario-actualizacion{
+
+        margin-bottom: 10px;
+    }
+    .contenedor-formulario-edicion-propiedades {
+        margin-top: 20px;
+        width: 220px;
+        margin-left: 0;
+        padding: 10px 10px 10px;
+        margin-bottom: 100px;
+        height: 250px;
+
+        margin-top: -50px;
+    }
+    .formulario-edicion {
+        text-align: center;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+
+    }
+    .nombre-propiedad-text{
+        width: 120px;
+        font-size: 0.7rem;
+
+
+
+    }
+    .btn-cambio,.btn-actualizar-propiedad{
+        margin-top:0 ;
+        width: 40px!important;
+        height: 25px;
+        font-size: xx-small;
+        margin-right: 5px;
+        margin-top: 5px;
+        display: flex;
+
+    }
+    .btn-cambio{
+        margin-left: 2px;
+    }
+    .form-modificacion-propiedad{
+     margin-top: 10px
+    }
+    .icono-eliminacion{
+        width: 25px;
+        height: 25px;
+    }
+    .btn-registro{
+        width: 90%;
+        font-size: 0.8rem;
+    }
+    .btn-borrar-propiedades-alerta,.btn-cancelar-propiedades-alerta{
+        width: 90px!important;
+        height: 30px!important;
+        border-radius: 0.5rem;
+    }
+
+}
+

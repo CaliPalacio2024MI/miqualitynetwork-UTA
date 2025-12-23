@@ -1,0 +1,221 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: white;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 24px;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+/* CONTENEDOR GENERAL */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+/* FILTROS */
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 20px;
+    padding: 15px 20px;
+    background-color: #fff;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.filtros label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 4px;
+    color: #6b7280;
+    font-size: 13px;
+    text-align: left;
+}
+
+.filtros select,
+.filtros input[type="text"],
+.filtro-Enfermedad {
+    width: 200px;
+    padding: 8px 10px;
+    border: 1px solid #A96D35;
+    border-radius: 12px;
+    background-color: #f9fafb;
+    font-size: 14px;
+    color: #111827;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.05);
+}
+
+/* BOTONES FILTRAR Y EXPORTAR */
+.filtros button {
+    margin-top: 17px;
+    padding: 10px 18px;
+    background-color: #A96D35;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    min-width: 100px;
+    height: 45px;
+}
+
+.filtros button:hover {
+    background-color: #092034;
+}
+
+.filtros button:active {
+    background-color: #6d3f20;
+    transform: scale(0.97);
+}
+
+/* BOTONES - TARJETAS DE ESTADÍSTICAS */
+.botones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.botones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.boton {
+    flex: 1 1 200px;
+    max-width: 220px;
+    padding: 15px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+    color: #333;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.boton label {
+    font-weight: 700;         /* Negrita */
+    font-size: 15px;          /* Un poco más grande */
+    color: #374151;           /* Gris oscuro elegante */
+    display: block;
+    margin-bottom: none;
+    text-align: center;       /* Opcional: centra los encabezados */
+}
+.contenedores {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.contenedor {
+    width: 45%;
+    min-height: 270px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    overflow-y: auto;
+    height: 55vh;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: none;
+    padding: 8px;
+}
+
+th {
+    background-color:rgb(12, 17, 66);
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.botonAction {
+    background-color: #ffffff;
+    color: #2c3e50;
+    border: 1px solid #d0d0d0;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin: 4px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.botonAction:hover {
+    background-color: #f4f6f8;
+    border-color: #b0b0b0;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.botonAction:active {
+    background-color: #eaecef;
+    transform: translateY(0);
+    box-shadow: none;
+}
+.grafica-box {
+    flex: 1 1 48%;
+    background: #ffffff;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    min-width: 300px;
+}
+.botonera {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.botonera button {
+    padding: 8px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #1f2937;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.botonera button:hover {
+    background-color: #f3f4f6;
+}
+
+.grafica-contenedor {
+    width: 100%;
+    height: 350px;
+}
+

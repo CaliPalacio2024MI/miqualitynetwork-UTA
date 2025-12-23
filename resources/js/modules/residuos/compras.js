@@ -1,0 +1,1 @@
+// contenido para compras.js

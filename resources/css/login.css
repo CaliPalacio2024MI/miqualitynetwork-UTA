@@ -1,0 +1,336 @@
+/* General: Configuración básica del body */
+body {
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+    background-color: #f5f5f5;
+    font-family: 'Tisa Sans Pro', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*seccion de alerta de olvide contraseña*/
+.contenedor-alerta-olvide-contrasena{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    width: 40%;
+    height: 60%;
+    transform: translate(0%, 0%);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center!important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   display: none;
+    z-index: 100;
+}
+.titulo-alerta-olvide-contrasena{
+    font-size: x-large;
+}
+.icono-alerta-olvide-contrasena{
+    width: 150px!important;
+    height: 150px!important;
+}
+.btn-aceptar-alerta-olvide-contrasena{
+    background-color: #092034;
+    width: 150px!important;
+    height: 50px!important;
+    border-radius: 0.5rem;
+    color: white;
+    transition: all 0.3s ease;
+}
+.btn-aceptar-alerta-olvide-contraseña:hover{
+    background-color: #BC8A55;
+    transform: scale(1.2);
+}
+/*fin de seccion de alerta olvide contraseña*/
+
+/*seccion de alerta contraseña incorrecta*/
+.contenedor-alerta-contrasena-incorrecta{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    width: 40%;
+    height: 60%;
+    transform: translate(0%, 0%);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center!important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   display: none;
+    z-index: 100;
+}
+.titulo-alerta-contrasena-incorrecta{
+    font-size: x-large;
+}
+.icono-alerta-contrasena-incorrecta{
+    width: 150px!important;
+    height: 150px!important;
+}
+.btn-aceptar-alerta-contrasena-incorrecta{
+    background-color: #092034;
+    width: 150px!important;
+    height: 50px!important;
+    border-radius: 0.5rem;
+    color: white;
+    transition: all 0.3s ease;
+}
+.btn-aceptar-alerta-contrasena-incorrecta:hover{
+    background-color: #BC8A55;
+    transform: scale(1.2);
+}
+/*fin de seccion de alerta contraseña incorrecta*/
+
+/* Contenedor principal para dividir la pantalla en dos mitades */
+.page-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+}
+.forgot-password {
+    text-align: center;
+    margin-top: 10px;
+}
+/* Contenedor izquierdo: Imagen de fondo */
+.left-section {
+    flex: 1;
+    background-image: url('../images/Trespropiedades.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Contenedor derecho: Formulario */
+.right-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: relative;
+    z-index: 1;
+}
+
+/* Contenedor del formulario */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Contenedor del logo */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Imagen del logo */
+.logo {
+    width: 80%;
+    max-width: 350px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Título */
+h2 {
+    margin-bottom: 0.8rem;
+    font-family: "Aviano Flare", serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #092034;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 1px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Línea decorativa bajo el título */
+.title-decoration {
+    width: 60px;
+    height: 3px;
+    background: #bc8a55;
+    margin: 1rem auto 2rem;
+}
+
+/* Campos de entrada */
+.input-group {
+    margin-bottom: 2rem;
+}
+
+.form-label {
+    display: block;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 0.7rem;
+}
+
+.input-field {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fff;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    outline: none;
+}
+
+.input-field:focus {
+    border-color: #092034;
+    box-shadow: 0 0 8px #092034;
+    transform: scale(1.02);
+}
+
+/* Botón principal */
+.button-primary {
+    width: 100%;
+    background-color: #bc8a55;
+    color: white;
+    padding: 0.85rem;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s ease;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button-primary:hover {
+    background-color: #a5753e;
+    transform: translateY(-2px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Recordarme */
+.remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.8rem;
+}
+
+.remember-me input[type="checkbox"] {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* Link de recuperación */
+.link {
+    color: #000000;
+    text-decoration: none;
+    font-size: 0.875rem;
+    margin-top: 2rem;
+    text-align: center;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: #a5753e;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .page-container {
+        flex-direction: column;
+        background-image: url('../images/5Propiedades.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+
+    .left-section {
+        display: none;
+    }
+
+    .right-section {
+        flex: 1;
+        background-color: transparent;
+        height: auto;
+    }
+
+    .form-container {
+        margin: auto;
+        padding: 2rem;
+        width: 90%;
+        max-width: 400px;
+        background-color: rgba(255, 255, 255, 0.85);
+        border-radius: 8px;
+    }
+
+    .logo {
+        width: 60%;
+        max-width: 150px;
+    }
+}
+@media(max-width:431px){
+
+    /*seccion de alerta de olvide contraseña*/
+    .contenedor-alerta-olvide-contrasena{
+        width: 80%;
+        height: 60%;
+        transform: translate(0%, 0%);
+        z-index: 100;
+
+    }
+    .titulo-alerta-olvide-contrasena{
+        font-size: x-large;
+    }
+    .icono-alerta-olvide-contrasena{
+        width: 150px!important;
+        height: 150px!important;
+    }
+    .btn-aceptar-alerta-olvide-contrasena{
+        width: 150px!important;
+        height: 50px!important;
+    }
+
+    /*fin de seccion de alerta olvide contraseña*/
+
+    /*seccion de alerta contraseña incorrecta*/
+    .contenedor-alerta-contrasena-incorrecta{
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        width: 80%;
+        height: 60%;
+        transform: translate(0%, 0%);
+
+        z-index: 100;
+    }
+
+    /*fin de seccion de alerta contraseña incorrecta*/
+
+}
+/* Fuentes personalizadas */
+@font-face {
+    font-family: "Aviano Flare";
+    src: url("/fonts/AvianoFlare-Regular.woff2") format("woff2"),
+        url("/fonts/AvianoFlare-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Tisa Sans Pro";
+    src: url("/fonts/TisaSansPro-Regular.woff2") format("woff2"),
+        url("/fonts/TisaSansPro-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}

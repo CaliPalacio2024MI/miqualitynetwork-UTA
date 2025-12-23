@@ -1,0 +1,174 @@
+ul {
+    list-style-type: none;
+    margin-left: 1rem;
+}
+
+li::before {
+   
+    margin-right: 5px;
+    color: gray;
+}
+.btn-toggle {
+    font-size: 14px;
+    margin-right: 5px;
+}
+.floating-form-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1050;
+}
+
+.floating-form-card {
+    width: 100%;
+    max-width: 600px;
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1050;
+}
+
+/* Estilo para el formulario */
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Estilo para la vista previa del gráfico */
+#previewChart {
+    background: white;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Estilo para los mensajes de ayuda */
+.form-text {
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+
+/* Estilo para los botones */
+.btn-outline-secondary {
+    transition: all 0.3s ease;
+}
+
+/* Estilo para el área de datos de la API */
+pre {
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 3px solid #007bff;
+}
+
+.modal-header {
+    padding: 1rem;
+    border-bottom: 1px solid #dee2e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-body {
+    padding: 1.5rem;
+}
+
+.modal-footer {
+    padding: 1rem;
+    border-top: 1px solid #dee2e6;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+.input-group > .form-control {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.input-group > .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    z-index: 0; /* Para evitar que cubra el borde del input */
+}
+
+.alert {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0;
+}
+.btn-primary, .btn-info {
+    display: inline-block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.modal-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    display: none; /* Cambiado a none para que no se muestre inicialmente */
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+}
+
+.modal-form-content {
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 1.5rem;
+}
+.chart-container {
+    width: 100%;
+    min-height: 400px;
+}
+canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}.grafico-container {
+    position: relative;
+    width: 100%;
+    min-height: 250px;
+}
+
+.mini-grafico {
+    width: 80px;
+    height: 40px;
+    position: relative;
+}
+
+.mini-grafico-value {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    font-weight: bold;
+}

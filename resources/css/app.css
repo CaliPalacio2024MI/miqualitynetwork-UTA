@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilo general de la tabla */
+#tablaReporte {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Encabezado */
+#tablaReporte thead {
+    background-color: #002448;
+}
+
+#tablaReporte thead th {
+    color: #ffffff;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+/* Filas alternadas */
+#tablaReporte tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hover sobre fila */
+#tablaReporte tbody tr:hover {
+    background-color: #BC8A55;
+    transition: background-color 0.2s ease;
+}
+
+/* Celdas del cuerpo */
+#tablaReporte tbody td {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+    color: #092034;
+}

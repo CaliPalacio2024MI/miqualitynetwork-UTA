@@ -1,0 +1,250 @@
+   /* Contenedor general */
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            padding: 30px;
+            justify-content: center;
+            align-items: flex-start;
+            background-color: #f4f6f8;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Columnas */
+        .left-column, .right-column {
+            background-color: #ffffff;
+            padding: 10px;
+            border-radius: 16px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
+            flex: 1;
+            min-width: 320px;
+            max-width: 520px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .left-column:hover, .right-column:hover {
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Encabezado */
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h2 {
+            font-size: 2rem;
+            color: #2c3e50;
+            font-weight: 700;
+        }
+
+        /* Formulario */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .line-input, .line-input-select {
+            width: 100%;
+            padding: 14px 16px;
+            margin-top: 10px;
+            border: 1px solid #ccd1d9;
+            border-radius: 10px;
+            font-size: 1rem;
+            color: #333;
+            background-color: #fafafa;
+        }
+
+        .line-input::placeholder {
+            color: #bbb;
+        }
+
+        .line-input:focus, .line-input-select:focus {
+            border-color: #3498db;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+            background-color: #fff;
+        }
+
+        /* Botón agregar */
+        .button-agregar {
+            background-color: #092034;
+            color: #fff;
+            padding: 14px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 25px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-agregar:hover {
+            background-color: #BC8A55;
+        }
+
+        /* Lista de agentes */
+        .listaAgentes h3 { /* Cambiado de listaPuestos a listaAgentes */
+            font-size: 1.6rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .agentes-container { /* Cambiado de puestos-container a agentes-container */
+            max-height: 420px;
+            overflow-y: auto;
+            background-color: #fefefe;
+            border: 1px solid #e1e8ed;
+            border-radius: 12px;
+            padding: 12px;
+        }
+
+        #agentes-list { /* Cambiado de departamentos-list a agentes-list */
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #agentes-list li { /* Cambiado de #departamentos-list li a #agentes-list li */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 18px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        #agentes-list li:hover { /* Cambiado de #departamentos-list li:hover a #agentes-list li:hover */
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        #agentes-list li span { /* Cambiado de #departamentos-list li span a #agentes-list li span */
+            font-size: 1.05rem;
+            color: #34495e;
+            flex-grow: 1;
+            margin-right: 20px;
+        }
+
+        .btn-container-right {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn-editar, .btn-eliminar {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 6px;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-editar:hover {
+            background-color: #e3f2fd;
+        }
+
+        .btn-eliminar:hover {
+            background-color: #fdecea;
+        }
+
+        .btn-editar img, .btn-eliminar img {
+            width: 22px;
+            height: 22px;
+        }
+
+        /* Modal (ya lo tienes, no necesitas modificarlo aquí) */
+        .custom-modal-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.55);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .custom-modal-content {
+            background: #fff;
+            padding: 30px;
+            border-radius: 16px;
+            max-width: 440px;
+            width: 90%;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            animation: fadeIn 0.3s ease;
+            text-align: center;
+        }
+
+        .custom-modal-content p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .custom-modal-content input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 1rem;
+        }
+
+        .custom-modal-buttons button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+            margin: 0 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .confirm-btn {
+            background-color: #3498db;
+            color: white;
+        }
+
+        .confirm-btn:hover {
+            background-color: #2980b9;
+        }
+
+        .cancel-btn {
+            background-color: #95a5a6;
+            color: white;
+        }
+
+        .cancel-btn:hover {
+            background-color: #7f8c8d;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .wrapper {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .left-column, .right-column {
+                width: 100%;
+            }
+        }

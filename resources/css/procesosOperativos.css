@@ -1,0 +1,135 @@
+.texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    color: black;
+    }
+    .titulo{
+        display: flex;
+
+    }
+    .carpeta{
+        width: 30px;
+        height: 30px;
+        left: 50%;
+        margin-right: 20px;
+        margin-left: 12px;
+    }
+    .contenido-titulo {
+        width: 300px;
+        border-radius: 1rem;
+        border-style: solid;
+        border-color: #BABABA;
+        border-width: 2px;
+    }
+    .linea-dorada {
+        width: 90%;
+            height: 4px;
+            background-color: #daa520;
+            margin: 10px auto 0;
+            border-radius: 2px;
+            display: block;
+        }
+
+.btn-Habitaciones,
+.btn-AyB,
+.btn-spa,
+.btn-tiendas,
+.btn-tenis,
+.btn-entretenimiento,
+.btn-lavanderia,
+.btn-convenciones,
+.btn-forum,
+.btn-arena,
+.btn-golf,
+.btn-club,
+.btn-comisariato {
+    display: flex;
+    align-items:end;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 0.5rem;
+    background-image: url('../images/carpeta.png');
+    background-size:70%;
+    background-position: center;
+    background-position-y: 0%;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease;
+    margin-top: 40px;
+    margin-left: 20px;
+    height: 150px;
+    width: 125px;
+   text-align: center;
+   transition: all 0.3s ease;
+}
+
+.btn-Habitaciones:hover,
+.btn-AyB:hover,
+.btn-spa:hover,
+.btn-tiendas:hover,
+.btn-tenis:hover,
+.btn-entretenimiento:hover,
+.btn-lavanderia:hover,
+.btn-convenciones:hover,
+.btn-forum:hover,
+.btn-arena:hover,
+.btn-golf:hover,
+.btn-club:hover,
+.btn-comisariato:hover
+{
+    transform: scale(1.05);
+    box-shadow: 0 20px 5px rgba(0, 0, 0, 0.2);
+    background-color: #BC8A55;
+}
+.p-6{
+    background-color: white!important;;
+}
+.secciones{
+    justify-content: center;
+    width: 100%;
+    ;
+}
+
+.seccion1,
+.seccion2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    min-width: 100%;
+    justify-content: center;
+}
+
+@media(max-width:431px){
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .titulo{
+    font-size: medium;
+    }
+    .contenido-titulo {
+        width: 250px;
+    }
+    .secciones{
+        overflow-y: auto;
+    }
+
+.secciones {
+    height: 100%;
+    overflow-y: auto;
+    display: block;
+    justify-content: center;
+}
+.seccion2{
+    margin-bottom: 100px;
+}
+}

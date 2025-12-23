@@ -1,0 +1,128 @@
+.rack-container {
+    padding: 20px;
+}
+
+.rack-title {
+    font-size: 24px;
+    background-color: #d1d5db; /* gris claro */
+    text-align: center;
+    border-radius: 20px;
+    padding: 12px 0;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.rack-content {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.rack-form {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rack-form label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.rack-form input,
+.rack-form select {
+     width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 5px;
+}
+
+.crear-btn {
+    background-color: #092034 !important;
+    color: white !important;
+    font-size: 14px !important;
+    padding: 6px 16px !important;
+    border: none !important;
+    border-radius: 6px !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    display: inline-block !important;
+    width: auto !important;
+    height: auto !important;
+}
+.crear-btn:hover {
+    background: #BC8A55 !important;
+}
+
+/* CONTENEDOR DE LA SECCIÓN DE BÚSQUEDA Y TABLA */
+.rack-tabla {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: -450px;
+    margin-left: 47%;
+}
+
+/* CONTENEDOR DE INPUT + BOTÓN (alineados horizontalmente) */
+.rack-busqueda {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    margin-top: -380px;
+}
+
+/* CAMPO DE TEXTO */
+.rack-busqueda input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    min-width: 300px;
+    
+}
+
+/* BOTÓN DE BÚSQUEDA */
+.rack-busqueda button {
+    background: #092034 !important;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.rack-busqueda button:hover {
+    background: #BC8A55 !important;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #092034;
+    color: white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+td form {
+    display: inline;
+}

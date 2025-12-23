@@ -1,0 +1,114 @@
+
+/* Contenido principal */
+.sidebar {
+    height: 45px!important;
+}
+.menu {
+    margin-top: 1px!important;  
+}
+/* Contenido principal */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #F4F4F4;
+}
+
+.marche-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.2s ease-in-out;
+}
+.marche-container img {
+    width: 55px;
+    height: 55px;
+}
+.marche-container:hover {
+    transform: scale(1.05);
+}
+.categoria-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-items: center;
+    align-items: start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.categoria-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: auto;
+}
+
+.categoria-btn {
+    width: 180px;
+    height: 120px;
+    background-color: #BC8A55;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.categoria-btn.active,
+.categoria-btn:hover {
+    background-color: #092034;
+}
+
+.categoria-btn img {
+    width: 50px;
+    height: 50px;
+}
+
+.subcategorias {
+    display: none;
+    position: absolute;          
+    top: 90%;
+    z-index: 1000;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px #ccc;
+}
+
+.subcategorias a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.subcategorias a:hover {
+    background-color: #f0f0f0;
+}
+
+.subcategorias a img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}

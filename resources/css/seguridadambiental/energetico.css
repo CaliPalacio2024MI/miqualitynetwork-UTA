@@ -1,0 +1,323 @@
+/* ESTILOS GENERALES */
+.captura-container {
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ENCABEZADO */
+.admin-header {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    border-radius: 9999px;
+    display: inline-block;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+}
+
+/* MENSAJES */
+.alert-message {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    background-color: #f0fff4;
+    color: #276749;
+    border: 1px solid #c6f6d5;
+    border-radius: 0.375rem;
+    position: relative;
+    text-align: center;
+}
+
+.close-button {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    color: inherit;
+}
+
+/* BARRA SUPERIOR */
+.action-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.section-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.add-button {
+    padding: 0.5rem 1rem;
+    background-color: #B38B2D;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.add-button:hover {
+    background-color: #9a7726;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+    .content-wrapper {
+        flex-direction: row;
+    }
+}
+
+/* TABLA */
+.table-wrapper {
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+    .table-wrapper.reduced-width {
+        width: 70%;
+    }
+}
+
+.table-content {
+    background-color: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.energeticos-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.energeticos-table th {
+    background-color: #011a32;
+    color: white;
+    padding: 0.75rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.energeticos-table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.energeticos-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+.energeticos-table tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* Alinear la columna de Nombre a la izquierda */
+.energeticos-table td:first-child,
+.energeticos-table th:first-child {
+    text-align: left;
+    padding-left: 1.5rem;
+}
+
+/* COLOR DISPLAY */
+.color-display {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+/* BOTONES DE ACCIÓN */
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.action-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.2s;
+}
+
+.edit-button, .delete-button {
+    background: none;
+    border: none;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.edit-button:hover, .delete-button:hover {
+    background-color: #f0f0f0;
+}
+
+.edit-button:hover .action-icon, 
+.delete-button:hover .action-icon {
+    transform: scale(1.1);
+}
+
+/* SIN RESULTADOS */
+.no-results {
+    padding: 2rem;
+    text-align: center;
+    color: #718096;
+}
+
+.no-results i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+/* FORMULARIO */
+.form-container {
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+    .form-container {
+        width: 30%;
+    }
+}
+
+.form-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.form-header {
+    background-color: #011a32;
+    color: white;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-header h5 {
+    margin: 0;
+    font-size: 1.125rem;
+}
+
+.form-body {
+    padding: 1.5rem;
+}
+
+/* GRUPOS DE FORMULARIO */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #011a32;
+    box-shadow: 0 0 0 3px rgba(1, 26, 50, 0.1);
+}
+
+/* SELECTOR DE COLOR */
+.color-selector {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.color-selector input[type="color"] {
+    width: 3rem;
+    height: 3rem;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.color-input {
+    flex: 1;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.25rem;
+}
+
+.input-hint {
+    color: #718096;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+/* ACCIONES DEL FORMULARIO */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.cancel-button, .submit-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.cancel-button {
+    background-color: #011a32;
+    color: white;
+}
+
+.cancel-button:hover {
+    background-color: #011a32;
+}
+
+.submit-button {
+    background-color: #B38B2D;
+    color: white;
+}
+
+.submit-button:hover {
+    background-color: #9a7726;
+}

@@ -1,0 +1,133 @@
+
+/* Contenido principal */
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 20px;
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+    background-color: #f4f4f4;
+    margin-top: -50px;
+}
+
+/* Título del formulario */
+.titulo-formulario {
+    text-align: left;
+    margin: 30px 80px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: -500px;
+}
+
+
+/* Estilo del formulario */
+.formulario-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    gap: 40px;
+    padding: 40px 80px;
+    max-width: 1400px;
+    margin: auto;
+    
+}
+
+
+.columna-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 320px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input, select {
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.obligatorio::after {
+    content: " *";
+    color: red;
+}
+
+.btn-registrar {
+    background-color: #BC8A55;
+    color: white;
+    padding: 8px 13px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.btn-registrar:hover {
+    background-color: #092034;
+}
+
+#acompananteCampos {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+.input-pequeno {
+    max-width: 100px;
+}
+/* Estilo switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  margin-top: 0px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #092034;
+}
+
+input:checked + .slider::before {
+  transform: translateX(22px);
+}
+
+
+  

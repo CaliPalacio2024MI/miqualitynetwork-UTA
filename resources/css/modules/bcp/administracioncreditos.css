@@ -1,0 +1,70 @@
+.creditos-container {
+    padding: 30px;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+}
+
+.titulo-principal {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.creditos-card {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.subtitulo {
+    font-weight: bold;
+    color: #092034;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.input-con-icono {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.input-numero {
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    border: 2px solid #c59c72;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.icono-editar {
+    color: #092034;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btn-guardar {
+    background-color: #092034;
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-guardar:hover {
+    background-color: #bc8a55;
+}
+
+.titulo{
+    margin-left: 10%;
+}

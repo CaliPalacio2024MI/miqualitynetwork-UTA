@@ -1,0 +1,894 @@
+/*seccion de alerta de registro de ANFITRIONES*/
+.contenedor-alerta-registro-anfitriones{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    width: 40%;
+    height: 60%;
+    transform: translate(55%, 20%);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center!important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 100;
+    display: none;
+}
+.titulo-alerta-registrado-anfitriones{
+    font-size: xx-large;
+}
+.icono-completado-registro-alerta-anfitriones{
+    width: 280px;
+    height: 200px;
+}
+.btn-aceptar-anfitriones-registro-alerta{
+
+    background-color: #092034;
+    width: 150px!important;
+    height: 80px!important;
+    border-radius: 1rem;
+    color: white;
+    transition: all 0.3s ease;
+}
+.btn-aceptar-anfitriones-registro-alerta:hover{
+    background-color: #BC8A55;
+    transform: scale(1.2);
+}
+/*fin de seccion de alerta de registro de ANFITRIONES*/
+
+
+/*seccion de alerta de eliminacion de anfitriones*/
+.contenedor-alerta-eliminacion-anfitriones{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    width: 40%;
+    height: 60%;
+    transform: translate(55%, 20%);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center!important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 100;
+    display: none;
+}
+.titulo-alerta-anfitriones-eliminado{
+    font-size: xx-large;
+}
+.icono-completado-eliminiar-alerta-anfitriones{
+    width: 200px;
+    height: 200px;
+}
+.btn-borrar-anfitriones-alerta,.btn-cancelar-anfitriones-alerta{
+    background-color: #092034;
+    width: 150px!important;
+    height: 80px!important;
+    border-radius: 1rem;
+    color: white;
+    transition: all 0.3s ease;
+}
+.btn-borrar-anfitriones-alerta:hover{
+    background-color: #e22117;
+    transform: scale(1.2);
+}
+.btn-cancelar-anfitriones-alerta:hover{
+    background-color: #3e4646;
+    transform: scale(1.2);
+}
+.contenedor-aceptar-cancelar{
+    display: flex;
+    gap: 30px;
+}
+/*fin de seccion de alerta de Elimininacion de anfitriones*/
+
+
+/*CONTENEDOR DE PARA LOS FORMULARIOS DE REGISTRO DE ANFITRIONES ELIMINACION Y BOTON DE REDIRRICIONAMIENTO DE REGISTRO DE ANFITRIONES*/
+.contenedor-anfitriones-rye {
+    display: flex;
+    margin-top: 20px;
+    height: 100%;
+}
+
+/*AQUI EMPIEZA LA SECCION DE REGISTRO DE ANFITRIONES*/
+
+/*ESTE CONTENEDOR TIENE EL FORMULARIO DE REGISTRO DE ANFITRIONES*/
+.contenedor-registro-anfitriones {
+    margin-left: 10px;
+    margin-right: 20px;
+    height: 600px;
+    width: 700px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+    overflow-y: auto!important;
+}
+/*  ESTE SOLO ES DONDE VA EL TITULO Y EL BACKGROUND DEL FORMULARIO DE REGISTRO DE ANFITRIONES ESTA DENTRO DE LA CLASE contenedor-registro-anfitriones*/
+.contenedor-titulo-registro{
+    background-color: #092034 !important;
+    position: sticky;
+    color: white;
+    top: 0;
+    z-index: 10;
+    padding: 10px;
+    min-height: 50px;
+    align-items: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+ }
+
+ /*ESTA ES LA CLASE DEL NOMBRE DEL TEXTO DEL TITULO DE REGISTRO DE ANFITRIONES contenedor-registro-anfitriones*/
+.titulo-registro {
+    width: 100%;
+    height: 100px;
+    display: flex; /* Asegura que el contenido se alinee */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-align: center;
+}
+
+/*PADDING DEL FORMULARIO DE REGISTRO DE ANFITRIONES ESTA CLASE ESTA ADENTRO DE contenedor-registro-anfitriones*/
+.pading-registro-anfitrion{
+    min-height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* ESTA CLASE ES UN CONTENEDOR QUE TIENE LOS INPUTS PARA REGISTRO DE ANFITRIONEs ESTA DENTRO DE LA CLASE contenedor-registro-anfitriones */
+.campo {
+    margin-bottom: 20px;
+}
+/*ESTE SOLO SON LAS CLASES DE LOS INPUTS DE TEXTOS PARA INGRESAR INFROMACION ESTA DENTRO DE contenedor-registro-anfitriones*/
+.input-text {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+
+}
+/*ESTOS SON LOS CHECKBOX OCULTOS DESDE UN PRINCPIO PARA NO OCUPAR TANTO ESPACIO*/
+#Calidad{
+    display: none;
+}
+#Ambiental{
+    display: none;
+}
+#Salud{
+    display: none;
+}
+#Informacion{
+    display: none;
+}
+#Alimentaria{
+    display: none;
+}
+
+/* Sangría para sub-secciones (nivel 1) */
+.ck-subseccion {
+    margin-left: 10px;
+}
+
+/* Contenedor de módulos (nivel 2) */
+.modulos {
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+/* Texto que anuncia módulos */
+.texto-modulos {
+    font-size: 14px;
+    margin: 8px 0 5px 0;
+    font-weight: bold;
+    color: #0c2d48;
+    font-style: italic;
+    display: block;
+}
+
+/* Estilo uniforme para checkbox en módulos */
+.modulos label {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 8px;
+}
+
+/* Estilo para los labels principales */
+fieldset > label {
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 32%;
+    vertical-align: top;
+}
+.modulos {
+    background-color: #f6f6f6;
+    border-left: 3px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+
+/* Estilo para el botón de registrar */
+.btn-registrar {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #092034;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+
+/*AQUI TERMINA LA SECCION DE REGISTRO DE ANFITRIONES*/
+
+
+
+/*AQUI EMPIEZA LA SECCION DE ANFITRIONES REGISTRADOS AQUI SE PUEDEN BORRAR O REDIRECIONAR PARA MODIFCAR UN ANFITRION EN CONCRETO*/
+/*CONTENEDOR PARA MANDAR A MOPDIFCAR O ELIMINAR UN ANFITRION*/
+.contenedor-edicion-anfitrion {
+    position: relative;
+    margin: 0 auto;
+    width: 580px; /* Aumentado para mayor espacio */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    height: 600px;
+    z-index: 1;
+
+}
+/*CONTENEDOR DE LA BARRA DE BUSQUEDA DEL NOMBRE DEL ANFITRION ESTA DENTRO DE LA CLASE contenedor-edicion-anfitrion*/
+.contenedor-buscador-nombre{
+    background-color: #092034 !important;
+    position: sticky;
+    color: white;
+    top: 0;
+    z-index: 100;
+    padding: 10px;
+    min-height: 100px;
+    align-items: center;
+    width: 100%;
+}
+/*BOTON DENTRO DE LA CLASE contenedor-buscador-nombre*/
+.btn-recargar-pagina{
+    background-color: gray;
+    width: 40px;
+    border-radius: 1rem;
+}
+/*TITULO DEL TEXTO DE ANFITRIONES REGISTRADOS*/
+.titulo-anfitriones-registrados {
+    text-align: center;
+}
+
+/*ESTE FORMULARIO LLAMA A LA FUNCION CONTROLADOR QUE BUSCARA LOS NOMBRES*/
+.formulario-busqueda-anfitriones{
+    padding-left: 20px;
+}
+
+/*TAMAÑO DEL INPUT DONDE SE ESCRIBE LE NOMBRE*/
+.input-nombre-buscador{
+    width: 75%;
+}
+
+/*BOTON PARA EJECUTAR LA BUSQUEDA DEL NOMBRE DEL ANFITRION O ANFITRIONES CON EL MISMO NOMBRE*/
+.btn-buscar{
+    background-color: grey;
+    height: 40px;
+    border-radius: 0.3rem;
+    width: 100px;
+
+}
+/*ESTE ES EL CONTENEDOR GENERAL PARA MODIFICAR Y ELIMINAR*/
+.contenedor-formulario-edicion-anfitrion{
+    padding-left: 20px;
+    padding-right: 5px;
+    height: 100%;
+}
+/*ESTA CLASE ESTA DENTRO DE contenedor-informacion-general-anfitriones GUARDA LOS TITULOS PARA IDENTIFICAR EL NOMBRE, APELLIDO Y DEPARTAMENTO DEL ANFITRION*/
+.form-nombres-apellidos-departamento {
+    display: flex;
+
+    justify-content:center;
+
+    padding-right: 80px;
+    margin-bottom: 0;
+    margin-top: 10%;
+    font-size: large;
+
+}
+/*ESTE ES EL CONTENEDOR QUE MUESTRA LOS 3 DATOS GENERALES DEL ANFITRION ESTA DENTRO DE LA CLASE contenedor-formulario-edicion-anfitrion*/
+.contenedor-informacion-general-anfitriones{
+    display: flex;
+    margin-top: 50px;
+    width: 100%;
+}
+
+
+
+/* ESTE DIV JUNTA TODOS LOS INPUTS Y BOTONES DE ANFITRIONES REGISTRADOS ESTA DENTRO DE LA CLASE contenedor-informacion-general-anfitriones */
+.form-group-row {
+    display: flex;
+    justify-content:center;
+    gap: 15px;
+    margin-bottom: 0px;
+}
+/*SOLO ES UN INPUT QUE SE MUESTRA EN RESPONSIVO DE 431 PARA ABAJO ESTA DENTRO DE LA CLASE form-group-row */
+.nombre-apellido-departamento-responsivo{
+    display: none;
+}
+/*DIV CONTIENE UN INPUT O UN BOTON DE ANFITRIONES REGISTRADOS ESTA DENTRO DE LA CLASE form-group-row */
+.form-group {
+    flex: 1;
+}
+/*ESTE ES EL NOMBRE DE LAS CLASES DE LOS INPUTS NOMBRE, APELLIDO Y DEPARTAMENTO */
+.form-input{
+    background: none;
+    color:#706c6c;
+    padding: .6em .3em;
+    border:none;
+    outline: none;
+
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* CARACTERISTICAS GENERALES DE LOS LABEL Y INPUTS*/
+.form-group .form-input {
+    width: 100%;
+}
+
+.form-group {
+
+    width: 100%;
+}
+.form-group .form-label {
+    display: block;
+    font-weight: bold;
+    color: #092034;
+    margin-bottom: 5px;
+}
+
+.form-group .form-input {
+    width: 100%;
+    padding: 10px 5px;
+    border: none;
+
+    border-bottom: none;
+
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+    transition: border-color 0.3s;
+}
+.form-group .form-input:focus {
+    border-bottom: 2px solid #092034;
+}
+/*FIN CARACTERISTICAS GENERALES DE LOS LABEL Y INPUTS*/
+
+/*LA CLASE QUE CONTIENE LOS BOTONES DE MODIFICAR Y ELEMINAR ANFITRIONES*/
+.botones-borrar{
+    margin-top: -20px;
+    display: flex;
+}
+
+/*CLASES PARA LOS BOTONES DE BORRAR Y MODIFICAR DE LA VISTA modificadorUser.blade*/
+.btn-modificar-principal{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background-color:none;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+
+    align-items: center;
+    margin-top: 10px;
+}
+/*ESTE ES SOLO EL TAMAÑO DE LAS IMAGENES DE BORRAR Y MODIFICAR*/
+.icono{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+/*ESTA ES LA SEPARACION POR CADA FORMULARIO DE LOS ANFITRIONES*/
+.linea-dorada {
+    border: none;
+    height: 3px;
+    background-color: #BC8A55;
+    width: 100%;
+
+}
+
+/*FIN SECCION DE MODIFICAR Y ELIMINIAR USUARIOS*/
+
+
+/*INICIO DE SECCION ESTILOS DE LAS ETIQUETAS GENERALES SIN CLASES */
+label {
+    display: block;
+    font-weight: bold;
+    color: #092034;
+    margin-bottom: 5px;
+}
+fieldset {
+    border: none;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #fefefe; /* Ligero fondo para destacar */
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+legend {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+fieldset label {
+    display: inline-block;
+    width: 30%; /* Organizar en 3 columnas */
+    margin-bottom: 10px;
+    font-weight: normal;
+    vertical-align: top; /* Alinear verticalmente */
+}
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+/*FIN DE SECCION ESTILOS DE LAS ETIQUETAS GENERALES SIN CLASES */
+
+
+/*HOVERS GENERALES PARA LOS BOTONES*/
+.btn-recargar-pagina:hover,
+.btn-privilegios:hover,
+.btn-buscar:hover,
+.btn-registrar:hover,
+.btn-modificar:hover{
+    background-color: #BC8A55;
+    transform: scale(1.05);
+}
+.icono:hover{
+    transform: scale(1.5);
+}
+/*FIN SECCION DER LOS HOVERS*/
+
+@media(max-width:2564px){
+
+    .contenedor-anfitriones-rye{
+        justify-content: center!important;
+    }
+    .contenedor-registro-anfitriones{
+        font-size: large;
+        height: 800px;
+    }
+    .pading-registro-anfitrion{
+        height: 100%;
+
+    }
+    .contenedor-edicion-anfitrion{
+        width:700px;
+        margin-left: 100px ;
+        font-size: 1rem;
+        height: 800px;
+    }
+    .contenedor-formulario-edicion-anfitrion{
+        height: 100%;
+    }
+    .titulo-usuario{
+        font-size: 1.7rem;
+
+    }
+    .titulo-fondo{
+        width: 95%;
+    }
+
+    .input-text{
+        font-size: large;
+    }
+    legend{
+        font-size: large;
+    }
+    .form-input{
+        font-size: 1rem;
+    }
+    .btn-registrar{
+        margin-bottom: 100px;
+    }
+    .form-label{
+        width: 100%;
+
+        margin-right: 100px;
+    }
+
+}
+@media (max-width: 1920px) {
+    .contenedor-anfitriones-rye{
+        overflow-y: hidden;
+    }
+    .contenedor-registro-anfitriones{
+        width: 550px;
+        height: 500px;
+
+    }
+    /*ESTE ES UN SEGUNDO DIV DENTRO DE FORMULARIO CONTENIDO*/
+    .pading-registro-anfitrion{
+        height: 100%;
+    }
+
+    /*ESTE DIV CONTIENE EL PRIMER FORMULARIO EL CUAL SOLO MUESTRA DOS BOTONES UNO PARA BORRAR Y OTRO QUE REDIRIGE PARA MODIFICAR AL USUARIO*/
+    .contenedor-edicion-anfitrion{
+        width: 600px;
+        height: 500px !important;
+        margin-left: 20px;
+    }
+
+    .titulo-usuario{
+        font-size: 1.7rem;
+    }
+    .contenedor-registro-anfitriones{
+        font-size: large;
+        margin-bottom: 0;
+    }
+    .input-text{
+        font-size:large;
+    }
+    legend{
+        font-size: large;
+    }
+    .contenedor-edicion-anfitrion{
+        font-size: large;
+    }
+    .form-input{
+        font-size: large;
+    }
+
+    .form-nombres-apellidos-departamento{
+        margin-right: 0;
+        margin-left: 50px;
+    }
+    .nombre-apellido-departamento-responsivo{
+        display: none;
+    }
+}
+@media(max-width:1537px){
+    .contenedor-anfitriones-rye{
+        overflow-y: hidden;
+    }
+    .contenedor-registro-anfitriones {
+        width: 600px;
+        height: 550px;
+        font-size: large;
+        margin-bottom: 0;
+    }
+    .pading-registro-anfitrion{
+        height: 100%;
+    }
+
+    .contenedor-edicion-anfitrion{
+        width: 600px;
+        height: 550px !important;
+        margin-left: 20px;
+        overflow-y: auto;
+    }
+    .contenedor-formulario-edicion-anfitrion{
+        width: 100%;
+    }
+    .nombre-apellido-departamento-responsivo{
+        display: none;
+    }
+}
+
+/* Ajustes para resoluciones más pequeñas */
+@media (max-width: 1024px) {
+    .contenedor-anfitriones-rye {
+        display: grid;
+         align-items: center;
+         justify-content: center!important;
+         height: 100%;
+         margin: 0 auto;
+         overflow-y: auto;
+         margin-top: 20px;
+     }
+
+
+     .contenedor-registro-anfitriones{
+         width: 650px;
+         height: 800px;
+         font-size: large;
+         margin-left: 15px;
+         margin-bottom: 0;
+     }
+     .contenedor-edicion-anfitrion {
+         width: 650px;
+         top:30px;
+         margin-left: 15px;
+         height: 800px;
+         margin-bottom: 200px;
+         overflow-y: auto;
+     }
+     .contenedor-formulario-edicion-anfitrion{
+         height: 100%;
+     }
+    .nombre-apellido-departamento-responsivo{
+        display: none;
+    }
+
+
+    .contenedor-externo-modificador-anfitriones{
+        margin-top: 0;
+
+    }
+
+    fieldset label {
+        width: 100%;
+    }
+    .input-nombre-buscador {
+        width: 50%;
+        padding: 8px 16px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        color: #4a5568;
+        outline: none;
+        transition: box-shadow 0.2s ease-in-out;
+    }
+    .formulario-busqueda-anfitriones{
+        margin-left: 0;
+    }
+    .form-group-row {
+
+        margin-left: 0;
+
+    }
+}
+@media (max-width: 431px) {
+    .contenedor-anfitriones-rye {
+        display: grid;
+         align-items: center;
+         justify-content: center!important;
+         height: 100%;
+         margin: 0 auto;
+         overflow-y: auto;
+         margin-top: 20px;
+     }
+     .contenedor-informacion-general-anfitriones{
+        display: block;
+    }
+
+    .nombre-apellido-departamento-responsivo{
+        display: block;
+        background: none;
+        color:#706c6c;
+        padding: .6em .3em;
+        border:none;
+        outline: none;
+        margin-right: 0;
+        margin-top: -40px;
+        width: 100%;
+        justify-content: center!important;
+        text-align: center;
+
+    }
+    .form-input{
+        display: none;
+    }
+    .form-nombres-apellidos-departamento{
+        justify-content: center;
+        text-align: center!important;
+        justify-content: center!important;
+        display: flex;
+        margin-left: 30px;
+    }
+    .form-label{
+        font-size: small;
+        margin-left: 20px;
+        margin-right: 0;
+    }
+
+    .form-group-row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -20px;
+        gap: 10px;
+    }
+    .botones-borrar {
+        flex-basis: 100%;
+        display: flex;
+    }
+
+    .contenedor-externo-modificador-anfitriones{
+        height: 100%;
+    }
+
+    .contenedor-registro-anfitriones{
+        width: 270px;
+        height: 800px;
+        font-size: large;
+        margin-left: 15px;
+        margin-bottom: 0;
+    }
+    .contenedor-edicion-anfitrion {
+        width: 270px;
+        top:30px;
+        margin-left: 15px;
+        height: 800px;
+        margin-bottom: 200px;
+        overflow-y: auto;
+    }
+    .contenedor-formulario-edicion-anfitrion{
+        height: 100%;
+    }
+    .titulo-registro{
+        font-size: large;
+    }
+
+    .btn-buscar{
+        width: 50px;
+    }
+    .contenedor-btn-borrar-anfitrion{
+        width: 90px;
+    }
+
+    .btn-modificar-principal{
+        width: 90px;
+    }
+    .titulo-usuario{
+        font-size: large;
+    }
+    .titulo-fondo{
+        width: 70%;
+        height: 80px;
+    }
+    .formulario-busqueda-anfitriones{
+        margin-left: 30px;
+    }
+    .btn-modificar-principal{
+        width: 50px;
+        height: 50px;
+    }
+    .icono{
+        width: 50px;
+        height: 50px;
+    }
+    .botones-borrar{
+        justify-content: center!important;
+        gap: 40px;
+        margin-left: 40px;
+    }
+
+    .btn-buscar{
+        font-size: small;
+    }
+    /*seccion de alerta de registro de ANFITRIONES*/
+    .contenedor-alerta-registro-anfitriones{
+        width: 60%;
+        height: 50%;
+        transform: translate(0, 40%);
+
+    }
+    .titulo-alerta-registrado-anfitriones{
+        font-size: xx-large;
+    }
+    .icono-completado-registro-alerta-anfitriones{
+        width: 180px;
+        height: 120px;
+    }
+    .btn-aceptar-anfitriones-registro-alerta{
+        width: 100px!important;
+        height: 50px!important;
+        border-radius: 0.5rem;
+    }
+    /*fin de seccion de alerta de registro de ANFITRIONES*/
+
+    /*seccion de alerta de eliminacion de anfitriones*/
+    .contenedor-alerta-eliminacion-anfitriones{
+        width: 60%;
+        height: 50%;
+        transform: translate(0%, 40%);
+
+    }
+    .titulo-alerta-anfitriones-eliminado{
+        font-size: xx-large;
+    }
+    .icono-completado-eliminiar-alerta-anfitriones{
+        width: 100px;
+        height: 100px;
+    }
+    .btn-borrar-anfitriones-alerta,.btn-cancelar-anfitriones-alerta{
+        background-color: #092034;
+        width: 90px!important;
+        height: 50px!important;
+        border-radius: 0.5rem;
+
+    }
+    .contenedor-aceptar-cancelar{
+        display: flex;
+        gap: 20px;
+    }
+    /*fin de seccion de alerta de Elimininacion de anfitriones*/
+}
+@media (max-width: 391px) {
+    .contenedor-anfitriones-rye {
+        min-height: 100vh;
+        margin-top: 20px;
+
+    }
+    .contenedor-externo-modificador-anfitriones{
+        height: 100%;
+
+    }
+    .formulario-busqueda-anfitriones{
+        margin-left: 0;
+    }
+    .contenedor-registro-anfitriones{
+        width: 240px;
+        height: 500px;
+       margin-bottom: 50px;
+       margin-left: 5px;
+    }
+    .contenedor-edicion-anfitrion {
+        width: 240px;
+        top:10px;
+        margin-bottom: 200px;
+        margin-left: 5px;
+    }
+
+    fieldset label {
+        width: 100%; /* Cambiar a una columna en pantallas pequeñas */
+    }
+
+    .input-nombre-buscador {
+        width: 60%;
+        padding: 8px 16px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        font-size: x-small;
+        color: #4a5568;
+        outline: none;
+        transition: box-shadow 0.2s ease-in-out;
+    }
+    .btn-buscar{
+        font-size: x-small;
+    }
+    .btn-modificar-principal{
+        width: 40px;
+        height: 40px;
+
+    }
+    .icono{
+        width: 40px;
+        height: 40px;
+    }
+}
+@media (max-width: 376px) {
+    .contenedor-registro-anfitriones{
+        width: 220px;
+        height: 500px;
+        margin-left: 0;
+
+    }
+    .contenedor-edicion-anfitrion {
+        width: 220px;
+        margin-left: 0;
+    }
+    .form-group-nombre-apellido-departamento{
+        font-size: xx-small;
+    }
+ }

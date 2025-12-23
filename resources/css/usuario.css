@@ -1,0 +1,790 @@
+.botonesadmin {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+    .titulo {
+        padding-top: 20px;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;  /* Centrado horizontalmente */
+        align-items: center;
+        text-align: center;
+    }
+
+    .titulo-fondo {
+        background-color: #BABABA;
+        border-radius: 3rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        height: 50px;
+        width: 90%;
+    }
+    .titulo-usuario{
+        align-items: center;
+        font-size: 1.7rem;
+
+    }
+    .creador,.administrador,.archivos,.procesos-btn{
+        flex: 1;
+        display:flex;
+        justify-content: center;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .crear-btn,.administrar-btn,.archivos-btn,.procesos-btn{
+        padding: 10px 20px;
+        height: 20%;
+        border-radius: 0.5rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: large;
+        gap: 50px;
+        justify-content: flex-start;
+    }
+
+
+    .logo{
+        width: 100px;
+        height: 100px;
+        margin-top: 0;
+    }
+
+    .crear-btn,.procesos-btn,.administrar-btn,.archivos-btn{background-color: #092034;}
+    /* Animacion de los botones */
+    .crear-btn:hover,.administrar-btn:hover,.archivos-btn:hover,.procesos-btn:hover{
+        transform: scale(1.05);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        background-color: #BC8A55;
+    }
+
+
+    @media(max-width:2565px){
+        .crear-btn,.administrar-btn,.archivos-btn,.procesos-btn{
+            height: 200px;
+            font-size: xx-large;
+            width: 500px;
+            margin-top: 5%;
+        }
+
+    }
+    @media (max-width: 1920px) {
+        .archivos-btn,.administrar-btn,.crear-btn,.procesos-btn{
+            height: 100px;
+            width: 250px;
+            font-size: large;
+            gap: 40px;
+            
+
+        }
+        .logo{
+        height: 80px;
+        width: 80px;
+        }
+        .botonesadmin{
+            gap: 100px;
+        }
+        .titulo{
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+    }
+    @media(max-width: 900px){
+        .crear-btn{
+            margin-right: 5px;
+
+
+        }
+        .administrar-btn{
+            margin-left: 0px;
+        }
+        .botonesadmin{
+            overflow-y: auto!important;
+        }
+
+
+    }
+
+    @media(max-width: 431px){
+        .titulo {
+            padding-top: 20px;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        .titulo-fondo {
+            width: 300px;
+        }
+        .titulo-usuario{
+            font-size: x-large;
+        }
+        .crear-btn,.administrar-btn,.archivos-btn{
+            height: 100px;
+            font-size: x-large;
+            width: 250px;
+            margin-top: 10px;
+        }
+
+        .logo{
+            margin-top: 0px;
+            width: 50px;
+            height: 50px;
+        }
+
+    }
+
+    @media (max-width: 391px) {
+        .crear-btn,.administrar-btn,.archivos-btn,.procesos-btn{
+            height: 50%;
+            width: 215px;
+
+            
+            font-size: larger;
+            gap:15px;
+            margin-top: 10px;
+        }
+        .crear-btn{
+            height: 50%;
+            width: 210px;
+            margin-right: 5px;
+        }
+        .titulo-fondo {
+            width: 90%;
+        }
+        .titulo-usuario{
+            font-size: large;
+        }
+        .procesos-btn{
+            height: 75px;
+        }
+    }
+    @media (max-width: 376px) {
+        .titulo{
+            margin-bottom: 40px;
+        }
+        .archivos-btn,.administrar-btn,.crear-btn,.procesos-btn{
+            height: 70px;
+            width: 200px;
+            font-size: large;
+            margin-top: -40;
+        }
+        .crear-btn{
+            height: 80px!important;
+        }
+    }
+
+    /* Estilos para el contenedor del botón de energéticos */
+.energeticos {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Estilos para el botón de energéticos */
+.energeticos-btn {
+    width: 250px;
+    height: 100px;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    background-color: #092034;
+    color: white;
+}
+
+
+/* Estilo hover para el botón de energéticos */
+.energeticos-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #BC8A55;
+}
+
+/* Media queries para mantener consistencia responsive */
+@media (max-width: 2565px) {
+    .energeticos-btn {
+        height: 200px;
+        font-size: xx-large;
+        width: 500px;
+        margin-top: 10%;
+    }
+}
+
+@media (max-width: 1920px) {
+    .energeticos-btn {
+        height: 100px;
+        width: 250px;
+        font-size: large;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 900px) {
+    .energeticos-btn {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 431px) {
+    .energeticos-btn {
+        height: 100px;
+        font-size: x-large;
+        width: 250px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 391px) {
+    .energeticos-btn {
+        height: 50%;
+        width: 215px;
+        font-size: larger;
+        gap: 15px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 376px) {
+    .energeticos-btn {
+        height: 70px;
+        width: 200px;
+        font-size: large;
+        margin-top: 10px;
+    }
+    
+}
+.opcion-card {
+    background-color: #001f36;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.opcion-card:hover {
+    transform: scale(1.05);
+    background-color: #003f6b;
+}
+
+.opcion-card .icono {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.card-panel {
+    background-color: #041a2e;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, background-color 0.2s;
+}
+
+.card-panel:hover {
+    background-color: #0a2f4e;
+    transform: scale(1.05);
+}
+
+.icon-panel {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 12px;
+}
+
+.btn-accidentes {
+    gap: 20px !important;
+    width: 280px !important;
+    white-space: normal;
+    flex-wrap: wrap;
+    line-height: 1.2;
+}
+
+/* //////////////////////////// */
+/* Estilos generales para el contenedor */
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .left-column,
+    .right-column {
+        background-color: #ffffff;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        flex: 1;
+        min-width: 300px;
+        max-width: 500px;
+    }
+
+    .header {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .header h2 {
+        font-size: 1.8em;
+        color: #333;
+        font-weight: 700;
+    }
+
+    .line-input,
+    .line-input-select {
+        width: 100%;
+        padding: 12px 15px;
+        margin-top: 10px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-sizing: border-box;
+        font-size: 1em;
+        color: #555;
+    }
+
+    .line-input::placeholder,
+    .line-input-select::placeholder {
+        color: #aaa;
+    }
+
+    .line-input:focus,
+    .line-input-select:focus {
+        border-color: #007bff;
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+    }
+
+    .button-agregar {
+        background-color: #092034;
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 1.1em;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .button-agregar:hover {
+        background-color: #BC8A55;
+    }
+
+    .listaPuestos h3 {
+        font-size: 1.6em;
+        color: #333;
+        margin-bottom: 20px;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .puestos-container {
+        max-height: 400px;
+        overflow-y: auto;
+        border: 1px solid #eee;
+        border-radius: 8px;
+        padding: 10px;
+        background-color: #f9f9f9;
+    }
+
+    #puestos-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #puestos-list li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 15px;
+        border-bottom: 1px solid #eee;
+        background-color: #fff;
+        margin-bottom: 8px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    #puestos-list li:last-child {
+        border-bottom: none;
+    }
+
+    #puestos-list li:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    #puestos-list li span {
+        font-size: 1.1em;
+        color: #444;
+        flex-grow: 1;
+        margin-right: 15px;
+    }
+
+    .btn-container-right {
+        display: flex;
+        gap: 8px;
+    }
+
+    .btn-editar,
+    .btn-eliminar {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-editar img,
+    .btn-eliminar img {
+        width: 24px;
+        height: 24px;
+        display: block;
+    }
+
+    .btn-editar:hover {
+        background-color: #e0f7fa;
+    }
+
+    .btn-eliminar:hover {
+        background-color: #ffebee;
+    }
+
+    #filtro-puesto {
+        margin-bottom: 20px;
+        padding: 12px 15px;
+        width: 100%;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-sizing: border-box;
+        font-size: 1em;
+        color: #555;
+    }
+
+    .custom-modal-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .custom-modal-content {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        max-width: 400px;
+        width: 90%;
+        animation: fadeIn 0.3s ease-out;
+    }
+
+    .custom-modal-content p {
+        margin-bottom: 25px;
+        font-size: 1.1em;
+        color: #333;
+        max-height: 150px;
+        overflow-y: auto;
+        text-align: left;
+        word-wrap: break-word;
+        padding-right: 5px;
+    }
+
+    .custom-modal-content input {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-size: 1em;
+    }
+
+    .custom-modal-buttons button {
+        padding: 10px 20px;
+        margin: 0 8px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 1em;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+    }
+
+    .custom-modal-buttons .confirm-btn {
+        background-color: #007bff;
+        color: white;
+    }
+
+    .custom-modal-buttons .confirm-btn:hover {
+        background-color: #0056b3;
+    }
+
+    .custom-modal-buttons .cancel-btn {
+        background-color: #6c757d;
+        color: white;
+    }
+
+    .custom-modal-buttons .cancel-btn:hover {
+        background-color: #5a6268;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .left-column,
+        .right-column {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+
+
+    .puesto-item {
+        padding: 6px 10px;
+        background-color: #f8f8f8;
+        border-radius: 4px;
+        margin-bottom: 5px;
+        border: 1px solid #ccc;
+    }
+
+    .custom-modal-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 1000;
+    }
+
+    .custom-modal-content {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        width: 90%;
+        max-width: 400px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .custom-modal-buttons {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .confirm-btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 6px 14px;
+        border: none;
+        border-radius: 4px;
+    }
+
+    .cancel-btn {
+        background-color: #f44336;
+        color: white;
+        padding: 6px 14px;
+        border: none;
+        border-radius: 4px;
+    }
+
+
+    /* Fondo opaco detrás del modal */
+    .custom-modal-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        /* fondo semitransparente */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+
+    /* Caja blanca del modal */
+    .custom-modal-content {
+        background-color: white;
+        padding: 20px 30px;
+        border-radius: 10px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Botones del modal */
+    .custom-modal-buttons {
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .confirm-btn {
+        background-color: #2563eb;
+        color: white;
+        border: none;
+        padding: 10px 18px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .cancel-btn {
+        background-color: #6b7280;
+        color: white;
+        border: none;
+        padding: 10px 18px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    /* Ocultar el modal por defecto */
+    .hidden {
+        display: none;
+    }
+
+    .btn-editar img {
+        width: 20px;
+    }
+
+    .btn-eliminar img {
+        width: 20px;
+        background-color: red;
+        border-radius: 6px;
+        padding: 4px;
+    }
+
+    .btn-editar,
+    .btn-eliminar {
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    /* Botones de acción */
+    .btn-editar img {
+        width: 22px;
+    }
+
+    .btn-eliminar img {
+        width: 22px;
+        background-color: red;
+        border-radius: 6px;
+        padding: 3px;
+    }
+
+    .btn-editar,
+    .btn-eliminar {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 6px;
+        border-radius: 6px;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-editar:hover {
+        background-color: #e3f2fd;
+    }
+
+    .btn-eliminar:hover {
+        background-color: #fdecea;
+    }
+
+    /* Estilo especial para el mensaje de advertencia */
+    #custom-modal-message {
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #c0392b;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #custom-modal-message::before {
+        content: '⚠️';
+        font-size: 1.5rem;
+    }
+
+    #custom-modal-message::before {
+        content: '';
+        background-image: url('/images/warning.png');
+        background-size: contain;
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+    }
